@@ -4,6 +4,21 @@
 
 **LLMunix** is a Pure Markdown Operating System that doesn't ship pre-built solutions—it provides the **factory to build them**. This starter template is optimized for Claude Code on the web, enabling dynamic agent creation and self-evolving problem-solving.
 
+## 📖 DI SOCIETA Documentation
+
+This repository also contains comprehensive documentation about **DI SOCIETA** (Digital/Decentralized Society) and **NEBUAH** - a platform for coordinating centralized and decentralized systems.
+
+**📚 [View the documentation on GitHub Pages](https://nebuah.github.io/diq-socientas/)**
+
+The documentation covers:
+- Blockchain, DAOs, and decentralized systems
+- Legal frameworks and regulatory integration
+- The Wyoming model for DAO recognition
+- Practical implementations with tokenized governance
+- 19 comprehensive chapters + introduction & conclusion
+
+---
+
 ## Philosophy: The Factory, Not the Products
 
 Traditional AI systems pre-define agents for specific domains (e.g., "Python Developer", "Data Scientist"). This has fundamental limitations:

@@ -1,0 +1,41 @@
+title: "DI SOCIETA - NEBUAH"
+description: "Documentación sobre la integración de sistemas centralizados y descentralizados"
+baseurl: "/diq-socientas"
+url: "https://nebuah.github.io"
+
+# Theme
+theme: jekyll-theme-cayman
+# Alternative themes you can use:
+# theme: jekyll-theme-minimal
+# theme: jekyll-theme-slate
+# theme: jekyll-theme-architect
+
+# Language
+lang: es
+
+# Navigation
+navigation:
+  - title: Inicio
+    url: /
+  - title: Introducción
+    url: /doc/intro.html
+  - title: Documentación Completa
+    url: /docs.html
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
+  - .git
+  - projects/
