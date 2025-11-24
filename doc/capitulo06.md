@@ -4,7 +4,7 @@ Aquí tienes el siguiente capítulo.
 
 ## Capítulo 6: Marcos Legales en Tensión
 
-Los sistemas descentralizados de DI SOCIETA chocan con categorías y asunciones fundamentales del derecho moderno. Este capítulo examina las tensiones legales cruciales.
+Los sistemas descentralizados de DI Q SOCIENTAS chocan con categorías y asunciones fundamentales del derecho moderno. Este capítulo examina las tensiones legales cruciales.
 
 ### 6.1 El Problema de Personalidad Jurídica de DAOs
 

@@ -4,14 +4,14 @@ Aquí tienes el Capítulo 14, el primero de la Parte IV.
 
 # PARTE IV: MARCOS DE INTEGRACIÓN
 
-Las Partes I, II y III han establecido el terreno: el conflicto entre centralización y descentralización, los principios filosóficos de la DI SOCIETA, y sus elementos constitutivos. Ahora llegamos al **núcleo central** de este documento: **¿Cómo integrar estos dos mundos?**
+Las Partes I, II y III han establecido el terreno: el conflicto entre centralización y descentralización, los principios filosóficos de la DI Q SOCIENTAS, y sus elementos constitutivos. Ahora llegamos al **núcleo central** de este documento: **¿Cómo integrar estos dos mundos?**
 
 Esta parte presenta tres marcos complementarios:
 1.  **El Modelo Wyoming:** El ejemplo práctico más avanzado de integración legal.
-2.  **Lex Societa:** El marco normativo teórico para la DI SOCIETA.
+2.  **Lex Socientas:** El marco normativo teórico para la DI Q SOCIENTAS.
 3.  **La Propuesta NEBUAH:** La plataforma de acción para ejecutar la integración.
 
-Estos marcos no son mutuamente excluyentes; son sinérgicos. Wyoming muestra que la integración es posible. Lex Societa proporciona la estructura conceptual. NEBUAH ofrece la plataforma para hacerlo realidad.
+Estos marcos no son mutuamente excluyentes; son sinérgicos. Wyoming muestra que la integración es posible. Lex Socientas proporciona la estructura conceptual. NEBUAH ofrece la plataforma para hacerlo realidad.
 
 ---
 
@@ -91,4 +91,4 @@ Este es el conjunto de leyes que crea la DAO LLC.
 
 **Conclusión del Capítulo 14:**
 
-El modelo Wyoming es un hito. Es la prueba de que la **integración legal es posible** sin destruir los principios de descentralización. Proporciona un puente práctico y funcional entre la DI SOCIETA y el sistema legal tradicional. Aunque no es perfecto, sirve como un **modelo fundamental** a partir del cual se pueden construir marcos legales similares en todo el mundo, una tarea central para la misión de NEBUAH.
+El modelo Wyoming es un hito. Es la prueba de que la **integración legal es posible** sin destruir los principios de descentralización. Proporciona un puente práctico y funcional entre la DI Q SOCIENTAS y el sistema legal tradicional. Aunque no es perfecto, sirve como un **modelo fundamental** a partir del cual se pueden construir marcos legales similares en todo el mundo, una tarea central para la misión de NEBUAH.

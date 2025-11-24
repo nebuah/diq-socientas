@@ -8,7 +8,7 @@ Claro. Aquí está el siguiente capítulo, el primero de la Parte II.
 
 ### 5.1 Panorama General
 
-El año 2024-2025 encuentra a la DI SOCIETA en encrucijada regulatoria crítica. Después de años de relativa indiferencia gubernamental (2009-2017), seguidos por atención creciente (2017-2020), y enforcement agresivo post-colapsos de Terra/Luna y FTX (2022-2023), ahora vemos emerging consensus en algunas jurisdicciones mayores, pero profunda fragmentación global.
+El año 2024-2025 encuentra a la DI Q SOCIENTAS en encrucijada regulatoria crítica. Después de años de relativa indiferencia gubernamental (2009-2017), seguidos por atención creciente (2017-2020), y enforcement agresivo post-colapsos de Terra/Luna y FTX (2022-2023), ahora vemos emerging consensus en algunas jurisdicciones mayores, pero profunda fragmentación global.
 
 No existe "posición global" coherente sobre cripto. En cambio, observamos espectro de approaches:
 
@@ -17,7 +17,7 @@ No existe "posición global" coherente sobre cripto. En cambio, observamos espec
 3.  **Jurisdicciones en Desarrollo:** Marcos emergentes, posición indefinida
 4.  **Jurisdicciones Indiferentes:** Vacío regulatorio por falta de capacidad o prioridad
 
-Esta fragmentación crea desafíos profundos para un sistema inherentemente global y sin fronteras como la DI SOCIETA.
+Esta fragmentación crea desafíos profundos para un sistema inherentemente global y sin fronteras como la DI Q SOCIENTAS.
 
 ### 5.2 China e India: El Enfoque Prohibitivo
 
@@ -153,6 +153,132 @@ Mientras nivel federal permanece fragmentado, algunos estados innovan:
 -   **Competencia Jurisdiccional:** Estados compiten por empresas cripto
 -   **Presión sobre Federal:** Innovación estatal puede influir policy federal
 -   **Complexity para Compliance:** Empresas nacionales deben navegar 50+ regulaciones distintas
+
+**El Cambio Legislativo de 2025: GENIUS y CLARITY**
+
+Después de años de fragmentación y conflicto entre agencias, el Congreso de Estados Unidos aprobó en 2025 un paquete legislativo de dos leyes complementarias que transformaron el paisaje regulatorio estadounidense:
+
+**1. Ley GENIUS (Guiding and Establishing National Innovation for U.S. Stablecoins Act)**
+
+**Firmada:** Julio 2025
+**Vigencia Plena:** Enero 2027 (18 meses de implementación)
+
+**Alcance y Enfoque:**
+
+La Ley GENIUS es una ley específica y quirúrgica, centrada casi exclusivamente en stablecoins de pago (payment stablecoins). Representa la respuesta legislativa al colapso de Terra/Luna y los temores sobre las reservas de Tether/Circle.
+
+**Objetivos Estratégicos:**
+-   Reforzar la hegemonía del dólar en la era digital
+-   Proteger al consumidor y al sistema financiero de riesgos sistémicos
+-   Establecer Estados Unidos como líder en regulación de stablecoins
+-   Crear certeza jurídica para emisores conformes
+
+**Provisiones Clave:**
+
+-   **Reservas 1:1 Obligatorias:** Cada stablecoin emitida debe estar respaldada 1:1 por efectivo o bonos del Tesoro estadounidense a corto plazo
+-   **Segregación de Activos:** Reservas completamente segregadas de activos corporativos del emisor
+-   **Auditorías Periódicas:** Verificación independiente trimestral de reservas
+-   **Prioridad en Quiebra:** Tenedores de stablecoins tienen prioridad absoluta sobre activos de reserva en caso de quiebra del emisor
+-   **Prohibición de Yield:** Emisores NO pueden ofrecer rendimientos sobre stablecoins (previene modelo "stablecoin bank")
+-   **Licenciamiento Federal:** Emisores de stablecoins significativas deben obtener licencia federal
+-   **Límites de Emisión:** Topes para emisores no-bancarios
+-   **Transparencia:** Reportes públicos regulares sobre composición de reservas
+
+**Categorización de Stablecoins:**
+
+1.  **Payment Stablecoins:** Respaldadas por fiat (USD), reguladas por GENIUS
+2.  **Commodity-Backed:** Respaldadas por oro u otros commodities, supervisión CFTC
+3.  **Algorithmic Stablecoins:** Sin respaldo directo (como Terra/UST), altamente restringidas o prohibidas
+
+**Emisores Afectados:**
+-   Circle (USDC) - ya conformaba sustancialmente
+-   Tether (USDT) - debe demostrar reservas completas o salir del mercado estadounidense
+-   Paxos (USDP) - conformidad
+-   Nuevos entrantes - clarity sobre requirements
+
+**Impacto en DI Q SOCIENTAS:**
+
+-   **Legitimación:** Stablecoins obtienen reconocimiento legal formal en EE.UU.
+-   **Protección al Usuario:** Holders de stablecoins conformes tienen protección similar a dinero electrónico
+-   **Barrera de Entrada:** Costos de compliance favorecen jugadores grandes
+-   **DeFi Impact:** Protocolos que dependen de stablecoins deben asegurar usar solo emisores licenciados
+-   **Global Standard:** GENIUS presiona a otros jurisdicciones a adoptar estándares similares
+
+**2. Ley CLARITY (CLARITY Act)**
+
+**Aprobada:** Mismo paquete que GENIUS (2025)
+**Objetivo:** Resolver la guerra jurisdiccional entre SEC y CFTC
+
+**El Problema que Resolvió:**
+
+Durante años, la SEC (bajo Gary Gensler) sostenía que casi todos los criptoactivos eran securities bajo la Prueba Howey (1946). La CFTC argumentaba que Bitcoin y Ethereum eran commodities. El resultado era caos regulatorio, enforcement por litigio, y uncertainty masiva.
+
+**Provisiones Clave de CLARITY:**
+
+**A. Creación de Categoría "Commodities Digitales"**
+
+Un activo digital es "commodity" (regulado por CFTC) si es **"suficientemente descentralizado"**:
+-   Su funcionamiento NO depende de esfuerzos gerenciales de un grupo identificable
+-   Ejemplos claros: Bitcoin, Ethereum (post-Merge)
+-   Regulador: CFTC obtiene jurisdicción sobre mercado spot de estos activos
+
+**B. Redefinición del Rol de SEC**
+
+La SEC mantiene jurisdicción sobre:
+-   **Oferta Inicial (ICO/IEO):** Cuando proyectos recaudan fondos del público
+-   **Tokens Centralizados:** Tokens que dan derecho a ganancias, governance centralizada
+-   **Securities Tokenizados:** Representaciones blockchain de valores tradicionales
+
+**C. El "Camino a la Descentralización"**
+
+Innovación más importante de CLARITY:
+1.  Un proyecto puede nacer como security (regulado por SEC durante fundraising)
+2.  Proyecto presenta plan de descentralización a reguladores
+3.  Una vez alcanzados hitos de descentralización (medidos por propiedad de nodos, distribución de tokens, governance), el proyecto solicita reclasificación
+4.  Si se aprueba, el token **muta legalmente** de security (SEC) a commodity (CFTC)
+5.  Puede entonces transarse libremente en exchanges regulados
+
+**D. Resumen: SEC vs. CFTC (Post-CLARITY)**
+
+| Aspecto | SEC | CFTC |
+|---------|-----|------|
+| **Qué Regula** | Activos de inversión centralizados | Activos descentralizados |
+| **Enfoque** | El "inicio" del proyecto (recaudación) | El mercado y trading diario |
+| **Ejemplos** | Tokens de ICOs, tokens centralizados | Bitcoin, Ethereum, tokens descentralizados |
+| **Mandato** | Protección al inversor | Protección del mercado (anti-manipulación) |
+
+**Impacto Conjunto GENIUS + CLARITY:**
+
+**Positivo:**
+-   **Fin de la Incertidumbre:** Empresas saben qué regulador aplica y qué reglas seguir
+-   **Legitimación:** Cripto obtiene recognition formal en el sistema legal estadounidense
+-   **Competitividad Global:** EE.UU. se posiciona como jurisdicción clara (compitiendo con UE/MiCA)
+-   **Inversión Institucional:** Clarity facilita entrada de fondos de pensiones, endowments
+-   **DeFi Pathway:** Protocolos descentralizados tienen ruta legal clara
+
+**Negativo:**
+-   **Compliance Costs:** Pequeños proyectos pueden no afford requirements
+-   **Concentración:** Favorece jugadores grandes (Circle, Coinbase, Kraken)
+-   **Enforcement Transitorio:** Período de ajuste con uncertainty sobre aplicación
+-   **DeFi Challenges:** Protocolos verdaderamente descentralizados aún enfrentan grey areas
+
+**Comparación: MiCA (UE) vs. GENIUS+CLARITY (EE.UU.)**
+
+| Característica | MiCA (UE) | GENIUS+CLARITY (EE.UU.) |
+|----------------|-----------|-------------------------|
+| **Enfoque** | Integral (todo el ecosistema en una ley) | Modular (leyes separadas por área) |
+| **Stablecoins** | Muy estricto (EMTs/ARTs) | Muy estricto (solo para stablecoins) |
+| **Otros Tokens** | Regulación comprehensiva | División SEC/CFTC por nivel de descentralización |
+| **Armonización** | 27 países, un marco | 50 estados bajo estándares federales |
+| **Innovación** | "Pathway" de descentralización | Sí, explícito |
+| **Efectividad DeFi** | Problemas con protocolos sin emisor | Problemas similares pero reconoce descentralización |
+
+**Posicionamiento Global Post-2025:**
+
+Con MiCA (UE, vigente 2024) y GENIUS/CLARITY (EE.UU., vigente 2025-2027), las dos mayores economías occidentales han establecido marcos comprehensivos. Esto presiona al resto del mundo a:
+1.  Adoptar estándares similares (compliance global)
+2.  Diferenciarse (arbitraje regulatorio)
+3.  Ceder competitividad (prohibición o inacción)
 
 ---
 
@@ -345,7 +471,7 @@ El Fondo Monetario Internacional juega rol crucial en propagación de posiciones
 
 **Tensión Fundamental:**
 
-FMI y FATF representan visión top-down, state-centric de governance financiera. DI SOCIETA representa visión bottom-up, descentralizada. Conflict es ideológico tanto como técnico.
+FMI y FATF representan visión top-down, state-centric de governance financiera. DI Q SOCIENTAS representa visión bottom-up, descentralizada. Conflict es ideológico tanto como técnico.
 
 ---
 
@@ -461,7 +587,7 @@ Pero stablecoins carecen de **sovereinty narrative** y **monetary independence**
 
 ### 5.7 América Latina: Oportunidades y Desafíos
 
-América Latina presenta contexto único donde DI SOCIETA podría tener adoption significativa, pero enfrenta obstáculos estructurales serios.
+América Latina presenta contexto único donde DI Q SOCIENTAS podría tener adoption significativa, pero enfrenta obstáculos estructurales serios.
 
 **Factores Favorables para Adoption:**
 

@@ -4,13 +4,13 @@ Claro. Aquí tienes el Capítulo 13.
 
 ## Capítulo 13: Resolución de Conflictos - Kleros y Arbitraje Descentralizado
 
-Los conflictos son inevitables en cualquier sociedad, centralizada o descentralizada. La DI SOCIETA enfrenta un desafío único: **¿cómo resolver disputas sin cortes centralizadas, pero manteniendo la equidad y la legitimidad?**
+Los conflictos son inevitables en cualquier sociedad, centralizada o descentralizada. La DI Q SOCIENTAS enfrenta un desafío único: **¿cómo resolver disputas sin cortes centralizadas, pero manteniendo la equidad y la legitimidad?**
 
 La respuesta emergente es el **arbitraje descentralizado**, con Kleros como el caso de estudio paradigmático.
 
 ### 13.1 El Problema: Disputas sin Jurisdicción Clara
 
-Los tribunales tradicionales son ineficaces para la DI SOCIETA por varias razones:
+Los tribunales tradicionales son ineficaces para la DI Q SOCIENTAS por varias razones:
 -   **Jurisdicción:** Las partes son a menudo pseudónimas y están distribuidas globalmente. ¿Qué tribunal tiene jurisdicción?
 -   **Costo y Velocidad:** Los litigios son extremadamente caros y lentos, haciéndolos inviables para la mayoría de las disputas on-chain.
 -   **Expertise:** Los jueces carecen del conocimiento técnico para interpretar contratos inteligentes o analizar datos de la blockchain.
@@ -79,4 +79,4 @@ El gran desafío es lograr que un laudo de Kleros sea reconocido por un tribunal
 
 **Conclusión del Capítulo 13:**
 
-El arbitraje descentralizado, con Kleros a la cabeza, es una pieza fundamental de la infraestructura de la DI SOCIETA. Proporciona un mecanismo de "justicia como servicio" que es global, eficiente y cripto-nativo. Aunque su principal fortaleza reside en el enforcement automático on-chain, los esfuerzos por integrarlo con los sistemas legales tradicionales son cruciales para su adopción generalizada. NEBUAH tiene un papel clave en la construcción de estos puentes, promoviendo el reconocimiento legal del arbitraje descentralizado y diseñando contratos híbridos que combinen lo mejor de ambos mundos.
+El arbitraje descentralizado, con Kleros a la cabeza, es una pieza fundamental de la infraestructura de la DI Q SOCIENTAS. Proporciona un mecanismo de "justicia como servicio" que es global, eficiente y cripto-nativo. Aunque su principal fortaleza reside en el enforcement automático on-chain, los esfuerzos por integrarlo con los sistemas legales tradicionales son cruciales para su adopción generalizada. NEBUAH tiene un papel clave en la construcción de estos puentes, promoviendo el reconocimiento legal del arbitraje descentralizado y diseñando contratos híbridos que combinen lo mejor de ambos mundos.

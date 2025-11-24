@@ -77,7 +77,7 @@ Cuatro scenarios posibles para relación centralizado-descentralizado:
 
 **Escenario 1: Reemplazo Total (Maximalismo Cripto)**
 
-Sistemas descentralizados reemplazan completamente estructuras estatales centralizadas. Estados-nación se vuelven irrelevantes, todo se coordina via DAOs y protocolos. Lex Societa suplanta derecho estatal.
+Sistemas descentralizados reemplazan completamente estructuras estatales centralizadas. Estados-nación se vuelven irrelevantes, todo se coordina via DAOs y protocolos. Lex Socientas suplanta derecho estatal.
 
 **Probabilidad:** Muy baja. Estados controlan violencia legítima, pueden criminalizar uso, controlar ISPs, presionar exchanges. Reemplazo total requeriría colapso previo de Estados, escenario distópico.
 
@@ -95,7 +95,7 @@ Sistemas centralizados y descentralizados coexisten pero sin integration profund
 
 **Escenario 4: Integración Superadora (Propuesta NEBUAH)**
 
-Desarrollo de frameworks híbridos que combinan fortalezas de ambos sistemas. DAOs obtienen reconocimiento legal (Wyoming model) manteniendo gobernanza descentralizada. Lex Societa proporciona normas transnacionales reconocidas por Estados. Regulación inteligente que protege sin anular innovation. CBDCs y criptos descentralizadas interoperan.
+Desarrollo de frameworks híbridos que combinan fortalezas de ambos sistemas. DAOs obtienen reconocimiento legal (Wyoming model) manteniendo gobernanza descentralizada. Lex Socientas proporciona normas transnacionales reconocidas por Estados. Regulación inteligente que protege sin anular innovation. CBDCs y criptos descentralizadas interoperan.
 
 **Probabilidad:** Posible con esfuerzo intencional. Requiere:
 -   Voluntad política de experimentar con híbridos
@@ -138,7 +138,7 @@ Siglo XX vio oscilación: Gilded Age (mínima regulación) → New Deal (regulac
 -   ETFs de Bitcoin/Ethereum que permiten inversión regulada
 
 **Integración Normativa:**
--   Lex Societa como framework reconocido internacionalmente (análogo Lex Mercatoria)
+-   Lex Socientas como framework reconocido internacionalmente (análogo Lex Mercatoria)
 -   Standards voluntarios (como ISO standards para blockchain)
 -   Best practices desarrolladas por industry
 -   Certification programs para compliance
@@ -151,10 +151,10 @@ NEBUAH se posiciona como **arquitecto y facilitador de integración**. No somos 
 
 1.  **Análisis riguroso:** Comprender ambos sistemas sin ideología que nuble juicio
 2.  **Traducción:** Hacer comprensible cripto a reguladores, derecho estatal a cripto-natives
-3.  **Diseño de puentes:** Desarrollar frameworks concretos (Lex Societa, model contracts, compliance toolkits)
+3.  **Diseño de puentes:** Desarrollar frameworks concretos (Lex Socientas, model contracts, compliance toolkits)
 4.  **Facilitación de diálogo:** Crear espacios donde stakeholders de ambos mundos construyan entendimiento mutuo
 5.  **Implementación piloto:** Casos prácticos (cooperativas municipales) que demuestran viabilidad
-6.  **Advocacy inteligente:** Representar intereses de DI SOCIETA sin maximalismo contraproducente
+6.  **Advocacy inteligente:** Representar intereses de DI Q SOCIENTAS sin maximalismo contraproducente
 
 **Nuestra tesis:**
 

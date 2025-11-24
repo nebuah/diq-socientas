@@ -4,7 +4,7 @@ Aquí tienes el Capítulo 18.
 
 # PARTE V: APLICACIONES Y CASOS PRÁCTICOS
 
-La teoría y los marcos de integración solo cobran vida cuando se aplican a problemas del mundo real. Esta parte presenta casos de uso concretos que demuestran cómo la DI SOCIETA, integrada con estructuras legales existentes, puede generar un valor social y económico tangible.
+La teoría y los marcos de integración solo cobran vida cuando se aplican a problemas del mundo real. Esta parte presenta casos de uso concretos que demuestran cómo la DI Q SOCIENTAS, integrada con estructuras legales existentes, puede generar un valor social y económico tangible.
 
 ## Capítulo 18: Caso Municipal: Cooperativas y Gobernanza Tokenizada
 
@@ -20,7 +20,7 @@ Los gobiernos municipales, especialmente en América Latina, a menudo enfrentan 
 
 ### 18.2 La Solución Híbrida: Cooperativa + DAO
 
-Proponemos un modelo donde un municipio (o un consorcio de municipios) crea una **Cooperativa de Servicios Públicos** bajo la ley local. Esta cooperativa, sin embargo, opera internamente utilizando herramientas de la DI SOCIETA.
+Proponemos un modelo donde un municipio (o un consorcio de municipios) crea una **Cooperativa de Servicios Públicos** bajo la ley local. Esta cooperativa, sin embargo, opera internamente utilizando herramientas de la DI Q SOCIENTAS.
 
 **Estructura del Modelo:**
 
@@ -80,4 +80,4 @@ Proponemos un modelo donde un municipio (o un consorcio de municipios) crea una 
 2.  **Fase 2 (Expansión):** Escalar el modelo para gestionar una parte del presupuesto participativo de todo el municipio.
 3.  **Fase 3 (Integración Total):** Utilizar el modelo para gestionar una porción significativa de la recaudación y el gasto municipal, integrándolo con los sistemas contables existentes.
 
-Este caso de uso demuestra cómo la DI SOCIETA no es una amenaza para el Estado, sino una herramienta poderosa para modernizarlo, hacerlo más transparente, eficiente y democrático, resolviendo problemas que han afectado a las administraciones públicas durante décadas.
+Este caso de uso demuestra cómo la DI Q SOCIENTAS no es una amenaza para el Estado, sino una herramienta poderosa para modernizarlo, hacerlo más transparente, eficiente y democrático, resolviendo problemas que han afectado a las administraciones públicas durante décadas.

@@ -1,9 +1,9 @@
 Aquí tienes el Capítulo 9, el primero de la Parte III.
 
 ---
-# PARTE III: ELEMENTOS CONSTITUTIVOS DE LA DI SOCIETA
+# PARTE III: ELEMENTOS CONSTITUTIVOS DE LA DI Q SOCIENTAS
 
-La DI SOCIETA no es simplemente una idea filosófica o un movimiento cultural: es un **ecosistema técnico-legal funcional** compuesto por elementos concretos que operan en la práctica. Esta tercera parte examina los componentes fundamentales que hacen posible la sociedad descentralizada: las organizaciones (DAOs), los instrumentos jurídicos (contratos inteligentes), los instrumentos económicos (tokens y criptomonedas), los mecanismos de gobernanza, y los sistemas de resolución de conflictos.
+La DI Q SOCIENTAS no es simplemente una idea filosófica o un movimiento cultural: es un **ecosistema técnico-legal funcional** compuesto por elementos concretos que operan en la práctica. Esta tercera parte examina los componentes fundamentales que hacen posible la sociedad descentralizada: las organizaciones (DAOs), los instrumentos jurídicos (contratos inteligentes), los instrumentos económicos (tokens y criptomonedas), los mecanismos de gobernanza, y los sistemas de resolución de conflictos.
 
 Cada uno de estos elementos representa un punto de contacto entre el mundo descentralizado y el centralizado, entre el código y la ley, entre la innovación tecnológica y el marco jurídico tradicional. Comprender estos elementos en profundidad es esencial para la misión integradora de NEBUAH.
 
