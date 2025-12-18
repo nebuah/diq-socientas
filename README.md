@@ -24,7 +24,7 @@
 
 ## Contenido
 
-La documentación se organiza en 5 partes con 19 capítulos:
+La documentación se organiza en 6 partes con 22 capítulos:
 
 ### Parte I: Fundamentos Conceptuales
 | Capítulo | Tema |
@@ -65,6 +65,13 @@ La documentación se organiza en 5 partes con 19 capítulos:
 | 18 | Cooperativas Municipales con Gobernanza Tokenizada |
 | 19 | Otros Casos de Implementación |
 
+### Parte VI: Casos de Estudio Argentina
+| Capítulo | Tema |
+|----------|------|
+| 20 | Aplicaciones Municipales en Santa Fe |
+| 21 | Proyectos del Gobierno Provincial de Santa Fe |
+| 22 | Proyectos Nacionales con Dimensión Internacional |
+
 ---
 
 ## Actualización: Computación Cuántica
@@ -88,6 +95,34 @@ La documentación incluye análisis exhaustivo sobre el **impacto de la computac
 - Account Abstraction (EIP-4337) como facilitador de migración
 - ZK-STARKs vs ZK-SNARKs para resistencia cuántica
 - Timeline de migración: 2025-2032+
+
+---
+
+## Casos de Estudio: Argentina
+
+La documentación incluye propuestas concretas para la implementación de DI SOCIETA en Argentina, organizadas por nivel de gobierno:
+
+### Nivel Municipal (Santa Fe)
+- **Tesorerías en stablecoins** para protección contra inflación
+- **Rosario ID**: Sistema de identidad cívica digital
+- **Verde Rosario**: Trazabilidad del cinturón verde agrícola
+- **Microcréditos DAO** para economía popular
+- **Tokenización del transporte** interurbano
+
+### Nivel Provincial (Santa Fe)
+- **LicitaSF**: Licitaciones transparentes en blockchain
+- **CredencialesSF**: Verificación de profesionales de salud y educación
+- **FondosSF**: Trazabilidad de transferencias a municipios
+- **BeneficiosSF**: Subsidios con verificación Zero-Knowledge
+- **CatastroSF**: Registro de tierras complementario
+
+### Nivel Nacional (con foco internacional)
+- **OriginChain MERCOSUR**: Certificados de origen digitales
+- **CarbonAgro**: Créditos de carbono para exportaciones
+- **InvestTrack**: Transparencia en inversiones bilaterales (ej. China)
+- **FoodPass**: Pasaporte digital de alimentos
+- **MERCOSUR ID**: Identidad digital regional
+- **RemesasSur**: Corredor de remesas con países limítrofes
 
 ---
 
