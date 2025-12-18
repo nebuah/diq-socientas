@@ -24,7 +24,7 @@
 
 ## Contenido
 
-La documentación se organiza en 6 partes con 22 capítulos:
+La documentación se organiza en 6 partes con 23 capítulos:
 
 ### Parte I: Fundamentos Conceptuales
 | Capítulo | Tema |
@@ -71,6 +71,7 @@ La documentación se organiza en 6 partes con 22 capítulos:
 | 20 | Aplicaciones Municipales en Santa Fe |
 | 21 | Proyectos del Gobierno Provincial de Santa Fe |
 | 22 | Proyectos Nacionales con Dimensión Internacional |
+| 23 | Acuerdo Comercial Estados Unidos - Argentina |
 
 ---
 
@@ -123,6 +124,14 @@ La documentación incluye propuestas concretas para la implementación de DI SOC
 - **FoodPass**: Pasaporte digital de alimentos
 - **MERCOSUR ID**: Identidad digital regional
 - **RemesasSur**: Corredor de remesas con países limítrofes
+
+### Acuerdo Comercial EE.UU. - Argentina (Nov 2025)
+- **OriginLink US-AR**: Certificación de origen bilateral en blockchain
+- **BeefChain US-AR**: Trazabilidad de carne bovina para exportación
+- **CriticalMinerals**: Cadena de suministro de litio (elegibilidad IRA)
+- **IPRegistry US-AR**: Protección de propiedad intelectual bilateral
+- **StandardsLink**: Reconocimiento mutuo de estándares FDA/ANMAT
+- **TradeMonitor**: Dashboard público de cumplimiento del acuerdo
 
 ---
 

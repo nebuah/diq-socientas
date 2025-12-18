@@ -67,6 +67,7 @@ El momento histórico, la confrontación emergente, y la propuesta NEBUAH.
 - [Capítulo 20: Aplicaciones Municipales en la Provincia de Santa Fe](doc/capitulo20.html)
 - [Capítulo 21: Proyectos del Gobierno Provincial de Santa Fe](doc/capitulo21.html)
 - [Capítulo 22: Proyectos Nacionales con Dimensión Internacional](doc/capitulo22.html)
+- [Capítulo 23: Acuerdo Comercial Estados Unidos - Argentina](doc/capitulo23.html)
 
 ### [Conclusión](doc/conclusion.html)
 Síntesis de aprendizajes clave y llamado a la acción para construir un futuro de integración inteligente.
@@ -99,6 +100,13 @@ Síntesis de aprendizajes clave y llamado a la acción para construir un futuro 
 - FoodPass: pasaporte digital de alimentos
 - MERCOSUR ID: identidad digital regional
 - RemesasSur: corredor de remesas
+
+### Acuerdo Comercial EE.UU. - Argentina (2025)
+- OriginLink US-AR: certificación de origen bilateral
+- BeefChain: trazabilidad de carne bovina
+- CriticalMinerals: cadena de suministro de litio
+- IPRegistry: protección de propiedad intelectual
+- StandardsLink: reconocimiento mutuo de estándares
 
 ---
 
