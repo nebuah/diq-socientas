@@ -15,6 +15,18 @@ Nos encontramos en un momento de transformación civilizatoria. La irrupción de
 
 Este documento propone una **tercera vía**: la **integración superadora** que reconoce valores legítimos en ambos paradigmas (centralizado y descentralizado) y busca articularlos constructivamente.
 
+---
+
+## Novedades
+
+### Computación Cuántica y Seguridad
+Los capítulos técnicos (7-13) incluyen análisis exhaustivo sobre el impacto de la **computación cuántica** en sistemas descentralizados: amenazas del algoritmo de Shor, criptografía post-cuántica NIST, firmas híbridas, y hojas de ruta de migración 2025-2032.
+
+### Casos de Estudio Argentina
+Nueva **Parte VI** con propuestas concretas para implementación en Argentina: aplicaciones municipales en Santa Fe, proyectos provinciales, y sistemas nacionales con dimensión internacional (MERCOSUR, comercio exterior, relaciones bilaterales).
+
+---
+
 ## Contenido
 
 ### [Introducción](doc/intro.html)
@@ -31,7 +43,7 @@ El momento histórico, la confrontación emergente, y la propuesta NEBUAH.
 #### Parte II: El Panorama Actual
 - [Capítulo 5: Contexto Regulatorio Global](doc/capitulo05.html)
 - [Capítulo 6: Marcos Legales en Tensión](doc/capitulo06.html)
-- [Capítulo 7: Infraestructura Técnica: Blockchain y Ethereum](doc/capitulo07.html)
+- [Capítulo 7: Infraestructura Técnica: Blockchain, Ethereum y Seguridad Cuántica](doc/capitulo07.html)
 - [Capítulo 8: Sistemas Económicos: DeFi y Criptomonedas](doc/capitulo08.html)
 
 #### Parte III: Elementos Constitutivos de la DI SOCIETA
@@ -51,8 +63,42 @@ El momento histórico, la confrontación emergente, y la propuesta NEBUAH.
 - [Capítulo 18: Caso Municipal: Cooperativas y Gobernanza Tokenizada](doc/capitulo18.html)
 - [Capítulo 19: Otras Implementaciones](doc/capitulo19.html)
 
+#### Parte VI: Casos de Estudio Argentina
+- [Capítulo 20: Aplicaciones Municipales en la Provincia de Santa Fe](doc/capitulo20.html)
+- [Capítulo 21: Proyectos del Gobierno Provincial de Santa Fe](doc/capitulo21.html)
+- [Capítulo 22: Proyectos Nacionales con Dimensión Internacional](doc/capitulo22.html)
+
 ### [Conclusión](doc/conclusion.html)
 Síntesis de aprendizajes clave y llamado a la acción para construir un futuro de integración inteligente.
+
+---
+
+## Temas Destacados
+
+### Seguridad Post-Cuántica
+- Amenazas del algoritmo de Shor a ECDSA
+- Estándares NIST: CRYSTALS-Dilithium, Kyber, SPHINCS+, FALCON
+- Firmas híbridas para período de transición
+- Account Abstraction (EIP-4337) como facilitador
+
+### Casos Argentina - Nivel Municipal (Santa Fe)
+- Tesorerías en stablecoins contra inflación
+- Rosario ID: identidad cívica digital
+- Verde Rosario: trazabilidad agrícola
+- Microcréditos DAO comunitarios
+
+### Casos Argentina - Nivel Provincial
+- LicitaSF: licitaciones transparentes
+- CredencialesSF: verificación profesional
+- FondosSF: trazabilidad de transferencias
+- BeneficiosSF: subsidios con Zero-Knowledge
+
+### Casos Argentina - Nivel Nacional
+- OriginChain MERCOSUR: certificados de origen
+- CarbonAgro: créditos de carbono para exportaciones
+- FoodPass: pasaporte digital de alimentos
+- MERCOSUR ID: identidad digital regional
+- RemesasSur: corredor de remesas
 
 ---
 
