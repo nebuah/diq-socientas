@@ -521,3 +521,221 @@ Like ZK-rollups but data availability off-chain.
 
 -   Light nodes can verify data availability without downloading all blobs
 -   Critical para scalability manteniendo decentralization
+
+---
+
+### 7.6 Computación Cuántica y Seguridad Criptográfica
+
+La computación cuántica representa tanto una **amenaza existencial** como una **oportunidad transformadora** para la infraestructura blockchain. Esta sección analiza los riesgos, las soluciones y la hoja de ruta hacia una blockchain resistente a ataques cuánticos.
+
+#### 7.6.1 Amenazas Cuánticas a la Criptografía Actual
+
+**El Algoritmo de Shor (1994):**
+
+El algoritmo de Shor puede factorizar números enteros y resolver el problema del logaritmo discreto en tiempo polinómico, lo que **rompe completamente**:
+
+-   **ECDSA (Elliptic Curve Digital Signature Algorithm):** Usado en Bitcoin, Ethereum, y prácticamente todas las blockchains
+-   **RSA:** Aunque menos común en blockchain, utilizado en sistemas tradicionales
+-   **Diffie-Hellman Key Exchange:** Base de muchos protocolos de comunicación segura
+
+**Implicación Crítica:**
+
+```
+Con una computadora cuántica suficientemente potente:
+- Cualquier clave privada puede derivarse de su clave pública
+- Todas las firmas ECDSA pueden ser falsificadas
+- Los fondos de CUALQUIER dirección con clave pública expuesta pueden ser robados
+```
+
+**¿Cuándo está expuesta una clave pública?**
+
+-   **Bitcoin/Ethereum:** La clave pública se expone cuando se realiza una transacción desde una dirección
+-   **Direcciones reutilizadas:** Especialmente vulnerables
+-   **Contratos inteligentes:** Sus direcciones no tienen clave privada (no vulnerables directamente), pero las EOAs que los controlan sí
+
+**El Algoritmo de Grover (1996):**
+
+El algoritmo de Grover acelera la búsqueda en bases de datos no estructuradas, ofreciendo una **aceleración cuadrática** contra funciones hash:
+
+-   **SHA-256 (256 bits):** Seguridad efectiva reducida a ~128 bits
+-   **Keccak-256 (256 bits):** Seguridad efectiva reducida a ~128 bits
+
+**Implicación:** Los ataques de preimagen y colisión se vuelven más factibles, pero **no catastróficos** si se duplica el tamaño del hash (ej. SHA-512).
+
+**Tabla de Vulnerabilidades:**
+
+| Primitiva Criptográfica | Algoritmo Cuántico | Impacto | Nivel de Riesgo |
+| ----------------------- | ------------------ | ------- | --------------- |
+| ECDSA (secp256k1)       | Shor               | Roto completamente | **CRÍTICO** |
+| EdDSA                   | Shor               | Roto completamente | **CRÍTICO** |
+| SHA-256                 | Grover             | Seguridad reducida 50% | MEDIO |
+| Keccak-256              | Grover             | Seguridad reducida 50% | MEDIO |
+| AES-256                 | Grover             | Seguridad reducida 50% | BAJO |
+
+#### 7.6.2 Timeline de la Amenaza Cuántica
+
+**Estado Actual (2024-2025):**
+
+-   **Qubits disponibles:** ~1,000+ qubits (IBM, Google)
+-   **Qubits necesarios para romper ECDSA:** Estimaciones varían entre 2,000-4,000 qubits lógicos (con corrección de errores)
+-   **Qubits físicos necesarios:** ~1-10 millones (debido a la corrección de errores)
+
+**Proyecciones:**
+
+| Horizonte | Probabilidad de Amenaza | Acción Requerida |
+| --------- | ----------------------- | ---------------- |
+| 2025-2028 | Muy Baja (<5%) | Planificación y estándares |
+| 2028-2032 | Baja-Media (10-30%) | Implementación de híbridos |
+| 2032-2040 | Media-Alta (30-60%) | Migración completa |
+| Post-2040 | Alta (>60%) | Post-cuántico obligatorio |
+
+**El Riesgo "Harvest Now, Decrypt Later":**
+
+Actores estatales pueden estar **capturando transacciones blockchain ahora** para descifrarlas cuando dispongan de computadoras cuánticas. Esto es especialmente preocupante para:
+
+-   Transacciones de alto valor
+-   Comunicaciones sensibles
+-   Identidades pseudónimas que podrían ser desanonimizadas
+
+#### 7.6.3 Criptografía Post-Cuántica (PQC)
+
+**Estándares NIST (Finalizados 2024):**
+
+El NIST ha estandarizado los siguientes algoritmos resistentes a ataques cuánticos:
+
+**1. CRYSTALS-Dilithium (ML-DSA) - Firmas Digitales:**
+
+-   **Tipo:** Basado en retículos (lattice-based)
+-   **Seguridad:** Problema Learning With Errors (LWE)
+-   **Tamaño de firma:** ~2.4 KB (vs. 64 bytes ECDSA)
+-   **Tamaño de clave pública:** ~1.3 KB (vs. 33 bytes ECDSA)
+-   **Rendimiento:** Ligeramente más lento que ECDSA, pero práctico
+
+**2. CRYSTALS-Kyber (ML-KEM) - Encapsulación de Claves:**
+
+-   **Uso:** Intercambio seguro de claves
+-   **Tipo:** Basado en retículos
+-   **Aplicación blockchain:** Comunicaciones seguras entre nodos
+
+**3. SPHINCS+ (SLH-DSA) - Firmas Hash-Based:**
+
+-   **Tipo:** Basado en funciones hash (conservador, bien entendido)
+-   **Ventaja:** No depende de problemas matemáticos nuevos
+-   **Desventaja:** Firmas muy grandes (~8-40 KB)
+
+**4. FALCON - Firmas Compactas:**
+
+-   **Tipo:** Basado en retículos (NTRU)
+-   **Ventaja:** Firmas más pequeñas que Dilithium (~1.3 KB)
+-   **Desventaja:** Implementación más compleja
+
+**Comparativa de Tamaños:**
+
+| Esquema | Firma | Clave Pública | Verificación |
+| ------- | ----- | ------------- | ------------ |
+| ECDSA (actual) | 64 B | 33 B | Muy rápida |
+| Dilithium-3 | 2,420 B | 1,312 B | Rápida |
+| SPHINCS+-128s | 8,080 B | 32 B | Lenta |
+| FALCON-512 | 666 B | 897 B | Rápida |
+
+#### 7.6.4 Implicaciones para Ethereum y DeFi
+
+**Ethereum's Quantum Roadmap:**
+
+Ethereum ha reconocido la amenaza cuántica y está planificando:
+
+1.  **Account Abstraction (EIP-4337):** Permite cambiar el esquema de firma sin cambiar la dirección, facilitando migración a PQC
+2.  **Verkle Trees:** Ya diseñados con consideraciones post-cuánticas en mente
+3.  **Propuesta de Hard Fork "Quantum Emergency":** Plan de contingencia si la amenaza se materializa antes de lo esperado
+
+**Impacto en Smart Contracts:**
+
+```solidity
+// VULNERABLE: Verificación de firma ECDSA actual
+function verify(bytes32 hash, bytes memory signature, address signer) public pure returns (bool) {
+    return ecrecover(hash, v, r, s) == signer;  // Vulnerable a Shor
+}
+
+// FUTURO: Verificación post-cuántica (conceptual)
+function verifyPQ(bytes32 hash, bytes memory signature, bytes memory publicKey) public pure returns (bool) {
+    return dilithiumVerify(hash, signature, publicKey);  // Resistente a Shor
+}
+```
+
+**Desafíos para DeFi:**
+
+-   **Costo de Gas:** Firmas PQC son 40-100x más grandes → costos de gas significativamente mayores
+-   **Almacenamiento:** Claves públicas más grandes aumentan requisitos de almacenamiento
+-   **Compatibilidad:** Contratos existentes necesitarán actualización o migración
+
+#### 7.6.5 Estrategias de Migración
+
+**Fase 1: Esquemas Híbridos (2024-2030)**
+
+```
+Firma Híbrida = ECDSA + Dilithium
+```
+
+-   Segura contra ataques clásicos Y cuánticos
+-   Si cualquiera de los dos se rompe, el otro protege
+-   Ethereum podría implementar mediante account abstraction
+
+**Fase 2: Migración de Fondos (Variable)**
+
+1.  **Direcciones "Post-Cuánticas":** Nuevos formatos de dirección para claves PQC
+2.  **Período de Migración:** Ventana de tiempo para mover fondos de direcciones vulnerables
+3.  **Fondos Huérfanos:** Problema de fondos en direcciones cuyas claves privadas se perdieron
+
+**Fase 3: Hard Fork de Emergencia (Si Necesario)**
+
+-   Congelar transacciones desde direcciones con claves públicas expuestas
+-   Implementar verificación PQC obligatoria
+-   Potencial "jubilación" de fondos no migrados
+
+#### 7.6.6 Zero-Knowledge Proofs y Resistencia Cuántica
+
+**ZK-SNARKs (Actuales):**
+
+-   Muchos ZK-SNARKs usan curvas elípticas → **vulnerables** a Shor
+-   Groth16, Plonk dependen de pairing-based cryptography
+
+**ZK-STARKs:**
+
+-   Basados únicamente en funciones hash → **resistentes** a Shor
+-   Grover reduce seguridad, pero duplicando parámetros se mitiga
+-   **StarkNet ya usa STARKs** → más preparado para era post-cuántica
+
+**Implicación para L2s:**
+
+| Solución L2 | Tecnología ZK | Resistencia Cuántica |
+| ----------- | ------------- | -------------------- |
+| zkSync Era | SNARKs | Vulnerable (migración necesaria) |
+| StarkNet | STARKs | **Resistente** |
+| Polygon zkEVM | SNARKs | Vulnerable (migración necesaria) |
+| Scroll | SNARKs | Vulnerable (migración necesaria) |
+
+#### 7.6.7 Recomendaciones para la DI SOCIETA
+
+**Para Desarrolladores:**
+
+1.  **Diseñar para Agilidad Criptográfica:** Arquitecturas que permitan cambiar esquemas de firma sin reescribir contratos
+2.  **Implementar Account Abstraction:** Prepararse para migración de firmas
+3.  **Evitar Exposición Innecesaria de Claves Públicas:** Usar direcciones frescas cuando sea posible
+
+**Para Usuarios:**
+
+1.  **No Reutilizar Direcciones:** Cada transacción desde una dirección expone la clave pública
+2.  **Planificar Migración de Fondos de Alto Valor:** Estar preparados para mover a direcciones PQC cuando estén disponibles
+3.  **Diversificar:** No mantener todos los activos en un solo esquema criptográfico
+
+**Para DAOs y Protocolos:**
+
+1.  **Incluir Mecanismos de Upgrade:** Governanza debe poder actualizar esquemas criptográficos
+2.  **Reservas para Migración:** Presupuestar costos de migración a PQC
+3.  **Monitorear Avances Cuánticos:** Establecer triggers para iniciar migración
+
+**Para NEBUAH:**
+
+1.  **Advocacy:** Promover estándares PQC en legislación (actualización de eIDAS, reconocimiento de firmas PQC)
+2.  **Educación:** Informar a la comunidad sobre riesgos y preparación
+3.  **Investigación:** Desarrollar marcos legales para la transición criptográfica

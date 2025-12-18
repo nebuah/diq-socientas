@@ -138,6 +138,232 @@ Muchos protocolos incluyen "llaves de administrador" o mecanismos de pausa de em
 
 ---
 
+---
+
+### 10.7 Contratos Inteligentes en la Era Cuántica
+
+La computación cuántica introduce desafíos fundamentales para los contratos inteligentes, tanto desde una perspectiva técnica como jurídica. Esta sección analiza las implicaciones y las estrategias de adaptación.
+
+#### 10.7.1 Vulnerabilidades Cuánticas en Smart Contracts
+
+**El Problema Central: Verificación de Firmas**
+
+Los contratos inteligentes actuales dependen de ECDSA para verificar la autorización de transacciones:
+
+```solidity
+// Patrón común en contratos inteligentes actuales
+function ejecutarOperacion(bytes32 hash, uint8 v, bytes32 r, bytes32 s) public {
+    address firmante = ecrecover(hash, v, r, s);
+    require(firmante == propietarioAutorizado, "Firma invalida");
+    // ... ejecutar operación
+}
+```
+
+**Con computación cuántica:**
+
+-   El algoritmo de Shor puede derivar cualquier clave privada de su clave pública
+-   Una vez que una dirección ha firmado UNA transacción, su clave pública es pública
+-   Un atacante cuántico podría forjar firmas para cualquier dirección con historial de transacciones
+
+**Contratos Especialmente Vulnerables:**
+
+| Tipo de Contrato | Riesgo | Razón |
+| ---------------- | ------ | ----- |
+| Multi-firma (Multisig) | **CRÍTICO** | Múltiples claves públicas expuestas |
+| Timelocks | **CRÍTICO** | Atacante tiene tiempo para ejecutar ataque |
+| Tesoros de DAOs | **CRÍTICO** | Alto valor, claves de firmantes conocidas |
+| Vesting Contracts | ALTO | Fondos bloqueados, claves expuestas |
+| Escrows | ALTO | Disputas prolongadas dan tiempo al atacante |
+| DEX Routers | MEDIO | Transacciones frecuentes, múltiples usuarios |
+
+#### 10.7.2 Implicaciones Legales de la Vulnerabilidad Cuántica
+
+**Validez Jurídica de Firmas Cuánticamente Comprometidas:**
+
+La pregunta legal crítica es: **¿Sigue siendo válido un contrato inteligente cuya firma podría ser forjada?**
+
+**Perspectivas Jurídicas:**
+
+1.  **Interpretación Estricta (Formalista):**
+    -   Si la firma criptográfica era válida en el momento de la ejecución, el contrato es válido
+    -   La capacidad futura de forjar firmas no invalida retroactivamente acuerdos pasados
+
+2.  **Interpretación Basada en Intención:**
+    -   Lo que importa es la intención real de las partes
+    -   Una transacción ejecutada por un atacante cuántico no refleja la intención del propietario legítimo
+    -   Análogo a la falsificación de firma en documentos físicos
+
+3.  **Enfoque de Diligencia Debida:**
+    -   Las partes tienen el deber de usar tecnología razonablemente segura
+    -   Usar criptografía vulnerable cuando existen alternativas podría constituir negligencia
+
+**El Caso del "Code is Law" bajo Amenaza Cuántica:**
+
+El debate "Code is Law" vs "Code AND Law" se vuelve más urgente:
+
+-   **Si el código se ejecuta porque un atacante forjó una firma cuánticamente**, ¿fue eso "legítimo" bajo la lógica de "Code is Law"?
+-   **Respuesta probable:** No. Incluso los defensores más radicales de "Code is Law" distinguen entre "el código hizo lo que se le instruyó" y "el código fue engañado por una entrada fraudulenta"
+
+#### 10.7.3 Contratos Ricardianos Post-Cuánticos
+
+Los contratos ricardianos se vuelven **más importantes** en la era cuántica:
+
+**Protecciones que Ofrecen:**
+
+1.  **Capa de Intención Verificable:**
+    ```markdown
+    ## Cláusula de Seguridad Criptográfica
+
+    Las partes reconocen que este contrato depende de criptografía de curva elíptica (ECDSA).
+    Si durante la vigencia del contrato surgen métodos para comprometer esta criptografía:
+
+    a) Ambas partes acuerdan migrar a esquemas criptográficos actualizados
+    b) El texto legal de este contrato prevalece sobre cualquier ejecución técnica
+       que resulte de compromiso criptográfico
+    c) Las partes se notificarán mutuamente de cualquier sospecha de compromiso
+    ```
+
+2.  **Hash del Documento Legal:**
+    -   Incluso si las firmas ECDSA son comprometidas, el hash del documento legal (usando SHA-256 con parámetros extendidos) proporciona una capa adicional de verificación
+
+3.  **Registro de Intención Off-Chain:**
+    -   Notarización, testigos, registros legales tradicionales como backup
+
+**Estructura de Contrato Ricardiano Cuántico-Consciente:**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  CONTRATO RICARDIANO v2.0                   │
+│                  (Quantum-Aware Edition)                    │
+├─────────────────────────────────────────────────────────────┤
+│ CAPA 1: Prosa Legal                                         │
+│ - Términos, intención, jurisdicción                         │
+│ - Cláusula de migración criptográfica                       │
+│ - Procedimiento de disputa bajo compromiso cuántico         │
+├─────────────────────────────────────────────────────────────┤
+│ CAPA 2: Vínculo Criptográfico                               │
+│ - Hash SHA-512 del documento legal                          │
+│ - Firma ECDSA (actual) + Firma Dilithium (cuando disponible)│
+│ - Timestamp on-chain                                        │
+├─────────────────────────────────────────────────────────────┤
+│ CAPA 3: Código Ejecutable                                   │
+│ - Smart contract con mecanismo de upgrade                   │
+│ - Account abstraction para migración de firmas              │
+│ - Función de pausa de emergencia                            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 10.7.4 Estándares de Smart Contracts Post-Cuánticos
+
+**ERC Propuestos para Resistencia Cuántica:**
+
+**1. ERC-PQSig (Propuesto):**
+
+```solidity
+// Interface para verificación de firmas post-cuánticas
+interface IERC_PQSig {
+    // Verifica firma Dilithium
+    function verifyDilithium(
+        bytes32 messageHash,
+        bytes calldata signature,
+        bytes calldata publicKey
+    ) external pure returns (bool);
+
+    // Verifica firma híbrida (ECDSA + Dilithium)
+    function verifyHybrid(
+        bytes32 messageHash,
+        bytes calldata ecdsaSig,
+        bytes calldata dilithiumSig,
+        address ecdsaSigner,
+        bytes calldata pqPublicKey
+    ) external pure returns (bool);
+
+    // Migra de ECDSA a firma post-cuántica
+    function migrateSignatureScheme(
+        bytes calldata newPublicKey,
+        bytes calldata migrationProof
+    ) external;
+}
+```
+
+**2. ERC-QuantumSafe Wallet Standard:**
+
+```solidity
+interface IQuantumSafeWallet {
+    // Estados de seguridad
+    enum SecurityLevel { Classical, Hybrid, PostQuantum }
+
+    function currentSecurityLevel() external view returns (SecurityLevel);
+
+    // Permite upgrade del esquema de firma
+    function upgradeToHybrid(bytes calldata pqPublicKey, bytes calldata proof) external;
+    function upgradeToPostQuantum(bytes calldata pqPublicKey, bytes calldata proof) external;
+
+    // Emergencia: pausa operaciones si se detecta amenaza cuántica
+    function quantumEmergencyPause() external;
+}
+```
+
+#### 10.7.5 Enforcement y Disputas en la Era Cuántica
+
+**Modificaciones al Marco de Arbitraje:**
+
+**Kleros y Arbitraje Descentralizado:**
+
+El sistema de arbitraje descentralizado necesita adaptaciones:
+
+1.  **Verificación de Evidencia Cuántica-Consciente:**
+    -   Los árbitros deben considerar si una transacción pudo haber sido resultado de un ataque cuántico
+    -   Nuevos criterios: ¿La firma fue producida antes o después de la disponibilidad de computadoras cuánticas capaces?
+
+2.  **Estándares de Prueba Actualizados:**
+    -   Evidencia de que el firmante tenía control legítimo en el momento de la firma
+    -   Análisis forense de timing de transacciones
+    -   Verificación de que no hubo actividad sospechosa de "harvest now, decrypt later"
+
+**Niveles de Enforcement Actualizados:**
+
+| Nivel | Descripción | Consideración Cuántica |
+| ----- | ----------- | ---------------------- |
+| Auto-Enforcement | Ejecución on-chain automática | Vulnerable si las firmas son forjadas |
+| Arbitraje On-Chain | Kleros/Aragon Court | Debe incluir análisis de autenticidad cuántica |
+| Tribunales Tradicionales | Sistema judicial | Pueden requerir peritos en criptografía cuántica |
+| Intervención de Emergencia | Pausa/rollback | Mecanismo crítico para ataques cuánticos |
+
+#### 10.7.6 Recomendaciones para Contratos Inteligentes
+
+**Para Desarrolladores de Smart Contracts:**
+
+1.  **Implementar Upgradeability Responsable:**
+    -   Usar proxy patterns que permitan actualizar verificación de firmas
+    -   Incluir mecanismos de pausa de emergencia
+
+2.  **Minimizar Exposición de Claves:**
+    -   Diseñar contratos que no requieran re-uso de direcciones
+    -   Implementar stealth addresses cuando sea posible
+
+3.  **Preparar para Account Abstraction:**
+    -   Estructurar contratos para ser compatibles con EIP-4337
+    -   Abstraer la lógica de verificación de firmas
+
+**Para Partes Contractuales:**
+
+1.  **Incluir Cláusulas de Migración Criptográfica:**
+    -   Especificar procedimientos para actualizar esquemas de firma
+    -   Definir responsabilidades y costos de migración
+
+2.  **Mantener Registros Off-Chain:**
+    -   Conservar evidencia de intención independiente de la blockchain
+    -   Usar notarización tradicional para contratos de alto valor
+
+3.  **Monitorear el Horizonte Cuántico:**
+    -   Establecer triggers para iniciar migración
+    -   Diversificar activos entre múltiples esquemas criptográficos
+
+---
+
 **Conclusión del Capítulo 10:**
 
-Los contratos inteligentes son la piedra angular de la DI SOCIETA, actuando como instrumentos técnicos y jurídicos. Su integración en el sistema legal tradicional está en marcha, pero es incompleta. El futuro pertenece a las **aproximaciones híbridas**, como los contratos ricardianos, que combinan la eficiencia del código con la flexibilidad y el matiz de la prosa legal. La misión de NEBUAH es desarrollar y estandarizar estas herramientas para construir un puente robusto entre el código y la ley.
+Los contratos inteligentes son la piedra angular de la DI SOCIETA, actuando como instrumentos técnicos y jurídicos. Su integración en el sistema legal tradicional está en marcha, pero es incompleta. El futuro pertenece a las **aproximaciones híbridas**, como los contratos ricardianos, que combinan la eficiencia del código con la flexibilidad y el matiz de la prosa legal.
+
+La amenaza cuántica añade una nueva dimensión de urgencia: los contratos inteligentes deben evolucionar hacia esquemas criptográficos resistentes a ataques cuánticos, mientras que los marcos legales deben adaptarse para manejar las complejidades de la transición. La misión de NEBUAH es desarrollar y estandarizar estas herramientas para construir un puente robusto entre el código, la ley, y la seguridad criptográfica del futuro.
