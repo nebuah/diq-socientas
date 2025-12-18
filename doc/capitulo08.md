@@ -550,3 +550,366 @@ Circle (USDC), Tether (USDT) can:
 -   **Interoperability:** Promote standards para CBDC-DeFi bridges
 -   **Education:** Inform public sobre privacy risks, importance de preserving decentralized alternatives
 -   **Pluralism:** Support multi-currency ecosystem (CBDCs + private stablecoins + decentralized crypto coexist)
+
+---
+
+### 8.6 Computación Cuántica y el Futuro de DeFi
+
+La computación cuántica presenta desafíos únicos para las finanzas descentralizadas. A diferencia de las finanzas tradicionales, donde los intermediarios pueden implementar actualizaciones de seguridad centralizadamente, DeFi requiere coordinación descentralizada para mitigar amenazas cuánticas.
+
+#### 8.6.1 Vulnerabilidades Cuánticas en Protocolos DeFi
+
+**Análisis por Categoría de Protocolo:**
+
+**1. DEXs (Exchanges Descentralizados):**
+
+| Componente | Vulnerabilidad | Impacto |
+| ---------- | -------------- | ------- |
+| Aprobaciones de tokens | Firmas ECDSA | Atacante puede aprobar transferencias ilimitadas |
+| Swaps | Firmas de transacción | Ejecución de swaps no autorizados |
+| Liquidity Provision | Firmas de LP | Retiro no autorizado de liquidez |
+| Router contracts | Direcciones de owners | Manipulación de parámetros del protocolo |
+
+**Escenario de Ataque a Uniswap:**
+
+```
+1. Atacante identifica direcciones de grandes LPs (Liquidity Providers)
+2. Deriva claves privadas usando computadora cuántica
+3. Ejecuta withdrawals masivos de pools principales
+4. Colapso de liquidez → slippage extremo
+5. Arbitraje del caos resultante
+6. TVL de protocolo → 0
+```
+
+**2. Protocolos de Lending:**
+
+-   **Aave/Compound:** Atacante podría:
+    -   Retirar colateral de otros usuarios
+    -   Crear posiciones de deuda fraudulentas
+    -   Manipular governance para extraer fondos
+    -   Liquidar posiciones saludables falsificando precios
+
+-   **MakerDAO:** Riesgo especial:
+    -   Derivar claves de grandes vault owners
+    -   Retirar colateral, mint DAI fraudulento
+    -   Vender DAI, colapsar peg
+    -   Liquidaciones en cascada
+
+**3. Bridges (Puentes Cross-Chain):**
+
+Los bridges son **especialmente vulnerables** porque:
+
+-   Custodian enormes cantidades de activos bloqueados
+-   Multi-sigs con claves públicas conocidas
+-   Atacante puede drenar TODOS los activos si compromete suficientes firmantes
+
+**Ejemplo Histórico Proyectado:**
+
+```
+Bridge típico: $500M TVL
+Multi-sig: 5 de 9 firmantes
+Firmantes con claves públicas expuestas: 9
+
+Con computadora cuántica:
+- Derivar 5+ claves privadas: trivial
+- Tiempo de ataque: minutos
+- Pérdida: $500M
+- Recuperación: imposible (inmutable)
+```
+
+**4. Oráculos:**
+
+Los oráculos como Chainlink dependen de:
+
+-   Nodos operadores con claves ECDSA
+-   Firmas para reportar precios
+
+**Ataque Cuántico a Oráculos:**
+
+```
+1. Comprometer claves de nodos de oráculo
+2. Reportar precios manipulados
+3. Trigger liquidaciones masivas en lending protocols
+4. Ejecutar arbitraje basado en precios falsos
+5. Extraer valor de todo el ecosistema DeFi
+```
+
+#### 8.6.2 Impacto en Bitcoin y Criptomonedas
+
+**Vulnerabilidad de Bitcoin:**
+
+Bitcoin es **parcialmente vulnerable** a ataques cuánticos:
+
+**Direcciones Seguras (P2PKH, P2SH no usadas):**
+
+-   La clave pública NO está expuesta en la blockchain
+-   Solo el hash de la clave pública es público
+-   **Relativamente seguro** hasta que se gaste desde la dirección
+
+**Direcciones Vulnerables:**
+
+-   Cualquier dirección que haya realizado una transacción
+-   Direcciones P2PK antiguas (Satoshi's coins, ~1M BTC)
+-   Direcciones con claves públicas expuestas en otros contextos
+
+**Timeline de Riesgo para Bitcoin:**
+
+| Tipo de Dirección | BTC en Riesgo | % del Supply |
+| ----------------- | ------------- | ------------ |
+| P2PK (legacy) | ~1.8M BTC | ~8.5% |
+| Direcciones reutilizadas | ~5-6M BTC | ~25-30% |
+| Cold storage no gastado | Seguro* | ~60% |
+
+*Seguro hasta que se intente gastar
+
+**Estrategia de Migración para Bitcoin:**
+
+```
+Opción 1: Soft Fork para direcciones PQ
+- Añadir nuevo tipo de dirección (P2QRH - Pay to Quantum Resistant Hash)
+- Usuarios migran voluntariamente
+- Fondos en direcciones legacy eventualmente "jubilados"
+
+Opción 2: Hard Fork de emergencia
+- Si amenaza es inminente
+- Congelar gastos desde direcciones vulnerables
+- Forzar migración
+
+Opción 3: Hybrid signatures (actual + PQ)
+- Requiere ambas firmas para transacciones
+- Backward compatible inicialmente
+```
+
+#### 8.6.3 Ethereum y el Ecosistema DeFi
+
+**Ethereum Quantum Roadmap:**
+
+Ethereum Foundation ha reconocido la amenaza y propone:
+
+1.  **Account Abstraction (EIP-4337):** Ya implementado
+    -   Permite wallets con lógica de verificación personalizada
+    -   Usuarios pueden migrar a firmas PQ sin cambiar dirección
+    -   **Facilitador clave** para transición post-cuántica
+
+2.  **Verkle Trees:** En desarrollo
+    -   Diseñados con post-quantum en mente
+    -   Compromises de tamaño más favorables para firmas PQ
+
+3.  **Quantum Emergency Hard Fork:** Plan de contingencia
+    -   Si amenaza se materializa antes de lo esperado
+    -   Puede incluir congelamiento de fondos vulnerables
+
+**DeFi Migration Challenges:**
+
+| Desafío | Descripción | Solución Propuesta |
+| ------- | ----------- | ------------------ |
+| Contratos inmutables | No pueden actualizarse | Migrar a nuevos contratos, incentivos de migración |
+| Claves de governance | Multi-sigs vulnerables | Migrar a PQ multi-sigs |
+| Liquidez fragmentada | Migración gradual divide liquidez | Bridges entre versiones, incentivos |
+| Costos de gas | Firmas PQ 40x más grandes | Layer 2s, optimizaciones |
+
+#### 8.6.4 Stablecoins y Resistencia Cuántica
+
+**Stablecoins Centralizadas (USDC, USDT):**
+
+-   **Ventaja:** Emisor central puede implementar controles
+-   **Riesgo:** Claves de administrador vulnerables
+-   **Mitigación:** Circle/Tether pueden congelar fondos robados, actualizar contratos
+
+**Stablecoins Descentralizadas (DAI):**
+
+-   **Riesgo Mayor:** Gobernanza descentralizada más lenta para responder
+-   **Puntos Críticos:**
+    -   Multi-sig de MakerDAO Foundation
+    -   Claves de grandes CDP holders
+    -   Oráculos de precio
+
+**Estrategia para DAI:**
+
+```
+1. Migrar MKR governance a firmas híbridas
+2. Implementar "Quantum Emergency Module" en contratos
+3. Establecer oráculo de "quantum threat level"
+4. Auto-trigger protections si amenaza detectada
+```
+
+#### 8.6.5 CBDCs y Computación Cuántica
+
+**Ventaja de CBDCs:**
+
+Los bancos centrales pueden:
+
+-   Actualizar infraestructura centralizadamente
+-   Implementar criptografía PQ sin coordinación distribuida
+-   Forzar migración de usuarios
+
+**Desventaja:**
+
+-   Si las claves del banco central son comprometidas → colapso del sistema monetario
+-   Single point of failure más grave que en cripto descentralizado
+
+**CBDCs Quantum-Ready:**
+
+| CBDC | Estado PQ | Notas |
+| ---- | --------- | ----- |
+| e-CNY (China) | En investigación | PBoC ha publicado papers sobre PQC |
+| Digital Euro | Considerado | ECB menciona en documentos técnicos |
+| Digital Dollar | Indefinido | NIST standards disponibles |
+
+**Implicación para DI SOCIETA:**
+
+La carrera entre CBDCs y cripto descentralizado por implementar PQC:
+
+-   Si CBDCs implementan primero: argumento de "seguridad" contra cripto
+-   Si cripto implementa primero: demuestra resiliencia de ecosistema descentralizado
+-   **NEBUAH debe abogar por estándares abiertos que beneficien a ambos**
+
+#### 8.6.6 Estrategias de Migración para DeFi
+
+**Framework de Migración en Tres Fases:**
+
+**Fase 1: Preparación (Inmediata - 2027)**
+
+```
+Para Protocolos:
+□ Auditar contratos para dependencias criptográficas
+□ Diseñar arquitectura upgradeable
+□ Implementar mecanismos de pausa de emergencia
+□ Establecer governance para decisiones rápidas
+
+Para Usuarios:
+□ Diversificar entre protocolos/chains
+□ Usar wallets con soporte para account abstraction
+□ No reutilizar direcciones
+□ Mantener documentación de posiciones
+```
+
+**Fase 2: Implementación Híbrida (2027-2032)**
+
+```
+Para Protocolos:
+□ Desplegar versiones v2 con soporte PQ
+□ Crear bridges entre v1 y v2
+□ Incentivar migración de liquidez
+□ Deprecar gradualmente v1
+
+Para Usuarios:
+□ Migrar a wallets PQ-ready
+□ Mover posiciones a protocolos v2
+□ Actualizar hardware wallets
+□ Verificar que exchanges soporten PQ
+```
+
+**Fase 3: Transición Completa (2032-2040)**
+
+```
+Para Protocolos:
+□ Desactivar soporte para firmas clásicas
+□ Implementar PQ-only en nuevos features
+□ Establecer período de gracia final
+□ "Jubilar" fondos no migrados (controversial)
+
+Para Usuarios:
+□ Completar migración de todos los activos
+□ Verificar todas las posiciones en PQ
+□ Actualizar recovery phrases/backups
+□ Educar a otros usuarios
+```
+
+#### 8.6.7 DeFi 2.0: Finanzas Descentralizadas Post-Cuánticas
+
+**Nuevos Primitivos Financieros:**
+
+**1. Quantum-Resistant AMMs:**
+
+```solidity
+// Conceptual: AMM con verificación PQ
+interface IQuantumAMM {
+    // Swap requiere firma PQ
+    function swap(
+        address tokenIn,
+        address tokenOut,
+        uint256 amountIn,
+        bytes calldata pqSignature
+    ) external returns (uint256 amountOut);
+
+    // Liquidity provision con firma híbrida
+    function addLiquidity(
+        uint256 amount0,
+        uint256 amount1,
+        bytes calldata ecdsaSig,
+        bytes calldata dilithiumSig
+    ) external returns (uint256 lpTokens);
+}
+```
+
+**2. Post-Quantum Flash Loans:**
+
+-   Flash loans requieren que el prestatario demuestre control de fondos para repago
+-   Con firmas PQ, garantía de que el repago no puede ser interceptado
+
+**3. Quantum-Safe Oráculos:**
+
+```
+Arquitectura de Oráculo PQ:
+┌─────────────────────────────────────────┐
+│          Agregador Principal            │
+│   (Verificación multi-firma PQ)         │
+├─────────────────────────────────────────┤
+│  Nodo 1   │  Nodo 2   │  Nodo 3   │ ... │
+│  (Dilith) │  (SPHINCS)│  (FALCON) │     │
+│   + STARK │   + STARK │   + STARK │     │
+└─────────────────────────────────────────┘
+       │           │           │
+       ▼           ▼           ▼
+   Fuente 1    Fuente 2    Fuente 3
+   (Exchange) (DEX price) (External)
+```
+
+**4. Zero-Knowledge DeFi (zkDeFi):**
+
+-   Usar ZK-STARKs (quantum resistant) para todas las pruebas
+-   Privacy + quantum resistance simultáneamente
+-   **StarkNet ecosystem** ya posicionado para esto
+
+#### 8.6.8 Recomendaciones para el Ecosistema DeFi
+
+**Para Desarrolladores de Protocolos:**
+
+1.  **Diseñar para Agilidad Criptográfica:**
+    -   Abstraer verificación de firmas en módulos reemplazables
+    -   Usar proxy patterns para upgradeability
+    -   Implementar circuit breakers
+
+2.  **Priorizar L2s con Tecnología Resistente:**
+    -   StarkNet (STARKs) sobre zkSync (SNARKs) para nuevos proyectos
+    -   Considerar Validiums para datos off-chain
+
+3.  **Participar en Estándares:**
+    -   Contribuir a ERCs de firmas PQ
+    -   Colaborar con competidores en estándares comunes
+    -   Compartir research y auditorías
+
+**Para Usuarios de DeFi:**
+
+1.  **Gestión de Riesgo:**
+    -   Diversificar entre protocolos y chains
+    -   Evitar grandes posiciones en un solo lugar
+    -   Tener plan de salida si se detecta amenaza cuántica
+
+2.  **Seguridad Operacional:**
+    -   No reutilizar direcciones
+    -   Usar hardware wallets actualizados
+    -   Mantener backup de todas las posiciones
+
+3.  **Educación Continua:**
+    -   Seguir desarrollos en computación cuántica
+    -   Entender timelines y riesgos
+    -   Participar en governance de protocolos para priorizar seguridad
+
+**Para NEBUAH:**
+
+1.  **Investigación:** Desarrollar métricas de "quantum readiness" para protocolos DeFi
+2.  **Advocacy:** Presionar por disclosure de riesgos cuánticos en protocolos
+3.  **Educación:** Crear recursos accesibles sobre DeFi y computación cuántica
+4.  **Coordinación:** Facilitar colaboración entre protocolos para migración coordinada

@@ -119,3 +119,265 @@ La regulación de los security tokens es el principal obstáculo y, a la vez, el
 -   **Suiza (FINMA):** Ofrece directrices claras desde 2017, clasificando los tokens en "de pago", "de utilidad" y "de activo" (asset tokens), siendo estos últimos tratados como valores.
 
 La estrategia para proyectos como KUX debe ser de **cumplimiento desde el diseño**, integrando herramientas de KYC/AML y adaptándose a las diferentes jurisdicciones, mientras se aboga por marcos regulatorios más claros y favorables a la innovación.
+
+---
+
+### 11.6 Tokens y Criptografía Post-Cuántica
+
+La computación cuántica afecta fundamentalmente la seguridad de todos los tipos de tokens, desde utility tokens hasta NFTs. Esta sección examina las vulnerabilidades específicas y las estrategias de protección.
+
+#### 11.6.1 Vulnerabilidades por Tipo de Token
+
+**Tokens de Utilidad (ERC-20):**
+
+| Aspecto | Vulnerabilidad | Impacto |
+| ------- | -------------- | ------- |
+| Transferencias | Firmas ECDSA | Robo de tokens |
+| Aprobaciones | `approve()` basado en dirección | Atacante puede aprobar a sí mismo |
+| Minting/Burning | Owner keys vulnerables | Inflación/destrucción no autorizada |
+| Governance | Votes basados en holdings | Manipulación de votaciones |
+
+**Tokens de Gobernanza:**
+
+Especialmente vulnerables porque:
+
+-   Los grandes holders son objetivos de alto valor
+-   La delegación expone claves públicas adicionales
+-   El timelock da ventana de ataque
+-   El control de governance permite drenar tesorerías
+
+**Security Tokens:**
+
+Riesgo adicional porque:
+
+-   Representan activos del mundo real
+-   Tienen implicaciones legales de propiedad
+-   Pueden requerir whitelists y KYC (puntos de centralización)
+
+**NFTs (ERC-721/ERC-1155):**
+
+| Vulnerabilidad | Impacto |
+| -------------- | ------- |
+| Transferencia no autorizada | Robo de NFTs de alto valor |
+| Falsificación de provenance | Crear historial de propiedad falso |
+| Manipulación de metadata | Cambiar contenido/atributos |
+| Royalty bypassing | Evitar pagos a creadores |
+
+**Soulbound Tokens (SBTs):**
+
+Paradoja interesante:
+
+-   No transferibles por diseño, pero...
+-   Si el atacante deriva la clave privada, puede "ser" la identidad
+-   Todos los credenciales, reputación, historial quedan comprometidos
+
+#### 11.6.2 Titulización Digital en la Era Cuántica
+
+**Impacto en la "Regla de Oro":**
+
+La máxima "TODO BIEN DEBE SER TITULIZADO" enfrenta desafíos cuánticos:
+
+1.  **Problema de Inmutabilidad:**
+    -   Tokens que representan propiedad de activos reales
+    -   Si la blockchain subyacente es comprometida, ¿qué pasa con la propiedad legal?
+
+2.  **Sincronización Legal-Técnica:**
+    -   El registro legal del activo (off-chain) puede divergir del registro blockchain
+    -   Necesidad de mecanismos de reconciliación
+
+**Propuesta de KUX Post-Cuántico:**
+
+```solidity
+// KUX v2.0 - Quantum-Aware Asset Token
+interface IKUX_v2 {
+    // Metadata legal con hash usando algoritmo PQ
+    struct AssetMetadata {
+        bytes32 legalDocHash;      // SHA-256 (sufficient for now)
+        bytes pqLegalDocHash;      // SHA-512 or SPHINCS+ hash
+        string jurisdiction;
+        address legalEntity;
+        uint256 lastVerified;
+    }
+
+    // Transferencia requiere verificación PQ opcional
+    function transfer(
+        address to,
+        uint256 amount,
+        bytes calldata pqSignature  // Optional until mandatory
+    ) external returns (bool);
+
+    // Verificación de propiedad con prueba PQ
+    function verifyOwnership(
+        address owner,
+        bytes calldata pqProof
+    ) external view returns (bool);
+
+    // Migración de dirección a PQ
+    function migrateToQuantumSafe(
+        bytes calldata newPQPublicKey,
+        bytes calldata migrationProof
+    ) external;
+}
+```
+
+#### 11.6.3 Propiedad y Transferibilidad Post-Cuántica
+
+**El Desafío de la Propiedad Digital:**
+
+```
+Pregunta: Si alguien roba mis tokens usando un ataque cuántico,
+         ¿sigue siendo el propietario legítimo?
+
+Respuesta Legal Probable:
+- NO bajo la mayoría de jurisdicciones
+- El robo no transfiere propiedad legítima
+- PERO: Enforcement es extremadamente difícil on-chain
+
+Solución Técnica:
+- Mecanismos de disputa y reversión
+- Registros off-chain de propiedad legítima
+- Tribunales arbitrales (Kleros) con jurisdicción PQ
+```
+
+**Modelo de Transferibilidad Híbrida:**
+
+```
+Transferencia de Token de Alto Valor:
+┌─────────────────────────────────────────┐
+│  1. Iniciación de Transferencia         │
+│     - Firma ECDSA (legacy)              │
+│     - Firma Dilithium (PQ)              │
+│     - Hash del contrato legal           │
+├─────────────────────────────────────────┤
+│  2. Período de Verificación (24-72h)    │
+│     - Notificación a ambas partes       │
+│     - Ventana de cancelación            │
+│     - Verificación KYC si requerido     │
+├─────────────────────────────────────────┤
+│  3. Ejecución                           │
+│     - Transferencia on-chain            │
+│     - Actualización registro legal      │
+│     - Notificación a autoridades        │
+└─────────────────────────────────────────┘
+```
+
+#### 11.6.4 Estándares de Tokens Post-Cuánticos
+
+**ERC-PQNFT (Propuesto):**
+
+```solidity
+// NFT resistente a cuántica
+interface IERC_PQNFT {
+    // Token ID incluye commitment PQ
+    struct TokenData {
+        uint256 tokenId;
+        bytes32 contentHash;
+        bytes pqOwnershipProof;
+        uint256 lastPQVerification;
+    }
+
+    // Mint requiere firma PQ del creador
+    function mint(
+        address to,
+        string calldata uri,
+        bytes calldata creatorPQSig
+    ) external returns (uint256);
+
+    // Transferencia con verificación dual
+    function safeTransferFromPQ(
+        address from,
+        address to,
+        uint256 tokenId,
+        bytes calldata ecdsaSig,
+        bytes calldata pqSig
+    ) external;
+
+    // Verificar autenticidad y propiedad
+    function verifyPQ(
+        uint256 tokenId,
+        address clamedOwner,
+        bytes calldata proof
+    ) external view returns (bool);
+}
+```
+
+**ERC-PQSBT (Soulbound Token Post-Cuántico):**
+
+```solidity
+// SBT con recuperación de identidad
+interface IERC_PQSBT {
+    // Recovery en caso de compromiso de clave
+    function initiateRecovery(
+        uint256 tokenId,
+        bytes calldata identityProof,
+        bytes calldata newPQPublicKey
+    ) external;
+
+    // Verificación de identidad multi-factor
+    function verifyIdentity(
+        uint256 tokenId,
+        bytes calldata pqSignature,
+        bytes calldata biometricHash,
+        bytes calldata socialRecoveryProof
+    ) external view returns (bool);
+
+    // Revocar en caso de compromiso confirmado
+    function revoke(
+        uint256 tokenId,
+        bytes calldata authoritySignature
+    ) external;
+}
+```
+
+#### 11.6.5 Implicaciones Regulatorias
+
+**Para Security Tokens:**
+
+La SEC y otros reguladores pueden requerir:
+
+1.  **Disclosure de Riesgos Cuánticos:**
+    -   Incluir riesgos de computación cuántica en prospecto
+    -   Actualizar risk factors conforme evoluciona la amenaza
+
+2.  **Planes de Migración:**
+    -   Emisores deben tener plan de contingencia
+    -   Responsabilidad fiduciaria de proteger activos de inversores
+
+3.  **Custodia Segura:**
+    -   Custodios de security tokens deben implementar medidas PQ
+    -   Estándares de custodia podrían actualizarse para incluir PQC
+
+**Para NFTs y Tokens de Utilidad:**
+
+-   Menor supervisión regulatoria, pero...
+-   Plataformas (OpenSea, etc.) podrían implementar estándares
+-   Marketplaces podrían requerir PQ para listings de alto valor
+
+#### 11.6.6 Recomendaciones
+
+**Para Emisores de Tokens:**
+
+1.  **Diseñar con Agilidad Criptográfica:**
+    -   Usar proxies upgradeables
+    -   Abstraer verificación de firmas
+    -   Incluir mecanismos de migración
+
+2.  **Documentación Legal:**
+    -   Incluir cláusulas sobre migración criptográfica en términos
+    -   Especificar procedimientos en caso de compromiso
+
+**Para Holders de Tokens:**
+
+1.  **Gestión de Riesgo:**
+    -   No concentrar valor en un solo esquema criptográfico
+    -   Monitorear anuncios de migración de protocolos
+
+2.  **Preparación:**
+    -   Mantener wallets actualizados
+    -   Tener plan de migración para activos de alto valor
+
+**Para NEBUAH:**
+
+1.  **Desarrollar estándar KUX v2.0 con consideraciones PQ**
+2.  **Crear framework de evaluación de riesgo cuántico para tokens**
+3.  **Advocacy para regulaciones que incentiven seguridad PQ**

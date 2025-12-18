@@ -110,6 +110,240 @@ El modelo más efectivo utiliza ambos:
 
 ---
 
+---
+
+### 12.5 Gobernanza Descentralizada en la Era Cuántica
+
+La computación cuántica amenaza los fundamentos criptográficos de la gobernanza descentralizada. Esta sección examina cómo los diferentes modelos de gobernanza se ven afectados y qué adaptaciones son necesarias.
+
+#### 12.5.1 Vulnerabilidades por Modelo de Gobernanza
+
+**Votación Ponderada por Tokens:**
+
+-   **Vulnerabilidad Principal:** Robo de tokens de votación
+-   **Impacto:** Atacante puede acumular poder de voto ilimitado robando tokens
+-   **Mitigación:** Snapshots más frecuentes, períodos de cuarentena para tokens recién transferidos
+
+**Votación Cuadrática:**
+
+-   **Vulnerabilidad Principal:** Ataques Sybil amplificados
+-   **Impacto:** Si el atacante puede crear múltiples identidades (derivando múltiples claves), el costo cuadrático se evade
+-   **Mitigación:** Proof of Humanity resistente a PQ, verificación biométrica
+
+**Gobernanza Basada en Reputación:**
+
+-   **Vulnerabilidad Principal:** Suplantación de contribuidores
+-   **Impacto:** Atacante puede "robar" la reputación de otros derivando sus claves
+-   **Mitigación:** Verificación continua de identidad, reputación time-locked
+
+**Votación por Convicción:**
+
+-   **Vulnerabilidad Principal:** Transferencia instantánea de convicción acumulada
+-   **Impacto:** Atacante puede heredar toda la convicción de víctimas
+-   **Mitigación:** Reset de convicción en transferencias sospechosas
+
+**Democracia Líquida:**
+
+-   **Vulnerabilidad Principal:** Secuestro de delegaciones
+-   **Impacto:** Atacante puede asumir el rol de delegados populares
+-   **Mitigación:** Verificación periódica de delegados, límites de delegación
+
+#### 12.5.2 Proceso de Gobernanza Cuánticamente Resistente
+
+```
+FLUJO DE GOBERNANZA POST-CUÁNTICO:
+
+Fase 1: Ideación y Discusión (Off-Chain)
+↓
+[Foros con login resistente a PQ - WebAuthn + Passkeys]
+↓
+Fase 2: Chequeo de Temperatura
+↓
+[Snapshot con firmas HÍBRIDAS (ECDSA + Dilithium)]
+[Verificación de elegibilidad via ZK-STARK]
+↓
+Fase 3: Propuesta Formal (On-Chain)
+↓
+[Requiere firma PQ del proponente]
+[Hash del texto legal de propuesta]
+[Depósito de seguridad en contrato PQ-safe]
+↓
+Fase 4: Período de Votación
+↓
+[Commit-Reveal para prevenir manipulación]
+[Fase 1: Commit = Hash(voto || nonce || firma_PQ)]
+[Fase 2: Reveal = voto, nonce, firma_PQ]
+↓
+Fase 5: Verificación y Timelock
+↓
+[Verificación de firmas PQ de todos los votos]
+[Timelock ADAPTATIVO: se extiende si hay indicadores de amenaza]
+↓
+Fase 6: Ejecución
+↓
+[Requiere quórum de firmas PQ de guardianes]
+[Opción de veto de emergencia durante timelock]
+```
+
+#### 12.5.3 Mecanismos de Seguridad Adicionales
+
+**1. Multi-Factor Governance:**
+
+```solidity
+// Ejemplo: Votación que requiere múltiples factores
+interface IMultiFactorVoting {
+    struct Vote {
+        uint256 proposalId;
+        bool support;
+        bytes ecdsaSignature;      // Factor 1: Firma tradicional
+        bytes dilithiumSignature;  // Factor 2: Firma PQ
+        bytes zkProof;             // Factor 3: Prueba de elegibilidad
+    }
+
+    function castVote(Vote calldata vote) external;
+}
+```
+
+**2. Delegación con Verificación Continua:**
+
+```solidity
+interface ISecureDelegation {
+    // Delegación requiere confirmación periódica
+    function delegate(
+        address delegatee,
+        bytes calldata pqSignature,
+        uint256 expirationBlock
+    ) external;
+
+    // Delegado debe "check-in" periódicamente
+    function confirmDelegation(
+        address delegator,
+        bytes calldata pqSignature
+    ) external;
+
+    // Delegación expira automáticamente si no se confirma
+    function isActiveDelegation(
+        address delegator,
+        address delegatee
+    ) external view returns (bool);
+}
+```
+
+**3. Gobernanza con Recuperación:**
+
+```solidity
+interface IRecoverableGovernance {
+    // Iniciar proceso de recuperación si se sospecha compromiso
+    function initiateRecovery(
+        uint256 proposalId,
+        bytes calldata evidenceHash,
+        bytes[] calldata guardianSignatures
+    ) external;
+
+    // Revertir propuesta ejecutada si se prueba manipulación
+    function revertProposal(
+        uint256 proposalId,
+        bytes calldata courtDecision,  // Decisión de Kleros
+        bytes calldata pqProof
+    ) external;
+}
+```
+
+#### 12.5.4 Snapshot y Votación Off-Chain Post-Cuántica
+
+**Snapshot v2 (Propuesto):**
+
+```
+Características PQ para Snapshot:
+
+1. Firmas Híbridas
+   - Usuarios firman con ECDSA + algoritmo PQ
+   - Verificación de ambas firmas requerida
+
+2. Estrategias de Voting Power PQ-Safe
+   - Snapshot de balances usa commitment schemes
+   - Pruebas de inclusión con Merkle trees resistentes (SHA-512)
+
+3. IPFS con Verificación PQ
+   - Contenido de propuestas hasheado con algoritmos PQ
+   - Metadatos incluyen hashes multi-algoritmo
+
+4. Ejecución Vinculada
+   - Resultado de Snapshot incluye hash PQ
+   - Multi-sig de ejecución verifica hash antes de actuar
+```
+
+#### 12.5.5 Casos de Uso: Gobernanza Crítica
+
+**Cambios de Protocolo (Ethereum Improvement Proposals):**
+
+| Fase | Medida de Seguridad PQ |
+| ---- | ---------------------- |
+| Discusión | Foros con autenticación PQ |
+| Core Dev Calls | Verificación de identidad multi-factor |
+| Votación de Clientes | Firmas PQ de maintainers |
+| Activación | Múltiples checkpoints de verificación |
+
+**Treasury Management:**
+
+```
+Propuesta de Gasto de Treasury:
+1. Proponente firma con PQ
+2. Período de discusión (7 días)
+3. Votación commit-reveal (5 días)
+4. Verificación de votos PQ (1 día)
+5. Timelock adaptativo (2-14 días según riesgo)
+6. Ejecución requiere quórum de guardianes PQ
+```
+
+**Protocol Upgrades:**
+
+```
+Upgrade de Contrato Crítico:
+1. Audit de código
+2. Propuesta con hash de nuevo código
+3. Votación con supermayoría (67%)
+4. Timelock extendido (30 días)
+5. "Rage quit" window para usuarios
+6. Ejecución con múltiples firmas PQ
+7. Período de rollback (7 días post-deployment)
+```
+
+#### 12.5.6 Recomendaciones
+
+**Para DAOs y Protocolos:**
+
+1.  **Implementar Gobernanza Híbrida:**
+    -   Aceptar firmas ECDSA Y PQ durante transición
+    -   Incentivar migración temprana a PQ
+
+2.  **Aumentar Redundancia:**
+    -   Múltiples factores de verificación
+    -   Mecanismos de veto y recuperación
+    -   Guardianes de emergencia
+
+3.  **Documentar Procedimientos:**
+    -   Protocolos claros de respuesta a incidentes
+    -   Criterios para activar medidas de emergencia
+
+**Para Participantes:**
+
+1.  **Migrar a Wallets PQ-Ready:**
+    -   Actualizar a wallets con soporte para account abstraction
+    -   Configurar claves PQ cuando estén disponibles
+
+2.  **Verificar Delegados:**
+    -   Confirmar identidad de delegados por múltiples canales
+    -   Revocar delegaciones si hay duda de compromiso
+
+3.  **Participar Activamente:**
+    -   La gobernanza activa es más resistente a ataques
+    -   Reportar comportamientos sospechosos
+
+---
+
 **Conclusión del Capítulo 12:**
 
-La gobernanza descentralizada es un campo de experimentación vibrante y uno de los mayores desafíos de la DI SOCIETA. No existe una solución perfecta, sino una serie de compensaciones entre eficiencia, descentralización, seguridad e igualdad. La clave es la **adaptabilidad**: las DAOs deben estar dispuestas a iterar y evolucionar sus modelos de gobernanza a medida que crecen. El papel de NEBUAH es analizar estos modelos, educar a la comunidad sobre sus implicaciones y ayudar a diseñar sistemas que sean a la vez robustos y justos.
+La gobernanza descentralizada es un campo de experimentación vibrante y uno de los mayores desafíos de la DI SOCIETA. No existe una solución perfecta, sino una serie de compensaciones entre eficiencia, descentralización, seguridad e igualdad. La clave es la **adaptabilidad**: las DAOs deben estar dispuestas a iterar y evolucionar sus modelos de gobernanza a medida que crecen.
+
+La amenaza cuántica añade una nueva dimensión: la gobernanza debe ser no solo eficiente y justa, sino también **criptográficamente resiliente**. Los mecanismos tradicionales de votación y delegación deben evolucionar hacia esquemas híbridos y eventualmente completamente post-cuánticos. El papel de NEBUAH es analizar estos modelos, educar a la comunidad sobre sus implicaciones, y ayudar a diseñar sistemas que sean robustos, justos, y seguros frente a las amenazas emergentes de la computación cuántica.

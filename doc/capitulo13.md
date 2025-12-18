@@ -77,6 +77,318 @@ El gran desafío es lograr que un laudo de Kleros sea reconocido por un tribunal
 
 ---
 
+---
+
+### 13.6 Arbitraje Descentralizado en la Era Cuántica
+
+La computación cuántica presenta desafíos únicos para los sistemas de resolución de disputas descentralizados. La integridad de la evidencia, la autenticidad de las partes, y la ejecución de decisiones dependen de primitivas criptográficas vulnerables.
+
+#### 13.6.1 Vulnerabilidades Cuánticas en Arbitraje
+
+**Kleros y Sistemas Similares:**
+
+| Componente | Vulnerabilidad | Impacto |
+| ---------- | -------------- | ------- |
+| Selección de jurados | Staking de PNK basado en ECDSA | Atacante puede participar como múltiples jurados |
+| Evidencia | Firmas de autenticidad | Evidencia puede ser falsificada retroactivamente |
+| Votación de jurados | Firmas ECDSA | Votos pueden ser forjados |
+| Ejecución | Contrato con owner keys | Decisiones pueden ser manipuladas |
+| Apelaciones | Depósitos y firmas | Sistema de apelaciones comprometido |
+
+**Escenario de Ataque:**
+
+```
+1. Disputa iniciada sobre contrato de alto valor
+2. Atacante identifica jurados seleccionados (direcciones públicas)
+3. Deriva claves privadas de mayoría de jurados
+4. Vota a favor de sí mismo usando claves de jurados
+5. Gana disputa fraudulentamente
+6. Contrato ejecuta decisión automáticamente
+7. Víctima pierde fondos sin recurso
+```
+
+#### 13.6.2 Evidencia Digital y Autenticidad Post-Cuántica
+
+**El Problema de la Evidencia:**
+
+En un mundo post-cuántico, la firma digital de un documento no garantiza autenticidad:
+
+```
+Pre-Cuántico:
+Documento + Firma ECDSA = Prueba de autoría verificable
+
+Post-Cuántico:
+Documento + Firma ECDSA = ¿Fue firmado por el autor o por
+                          alguien que derivó su clave?
+```
+
+**Soluciones Propuestas:**
+
+**1. Evidencia Multi-Hash:**
+
+```
+Paquete de Evidencia Post-Cuántica:
+{
+  "documento": "contenido...",
+  "hashes": {
+    "sha256": "abc123...",
+    "sha512": "def456...",
+    "shake256": "ghi789..."
+  },
+  "firmas": {
+    "ecdsa": "firma_legacy...",
+    "dilithium": "firma_pq...",
+    "sphincs": "firma_hash_based..."
+  },
+  "timestamp": {
+    "blockchain": "tx_hash...",
+    "tsa": "timestamp_authority...",
+    "witnesses": ["firma1", "firma2", "firma3"]
+  }
+}
+```
+
+**2. Testigos Criptográficos:**
+
+-   Múltiples partes independientes atestiguan la evidencia
+-   Cada testigo usa diferente esquema criptográfico
+-   Atacante necesitaría comprometer TODOS los testigos
+
+**3. Anchoring Temporal:**
+
+```
+Timeline de Evidencia:
+┌─────────────────────────────────────────┐
+│ T0: Creación de evidencia               │
+│     - Hash en blockchain                │
+│     - Timestamp de autoridad externa    │
+│     - Publicación en IPFS               │
+├─────────────────────────────────────────┤
+│ T1: Confirmación (múltiples bloques)    │
+│     - Evidencia "enterrada" en chain    │
+│     - Difícil de modificar sin detectar │
+├─────────────────────────────────────────┤
+│ T2: Disputa                             │
+│     - Verificar integridad temporal     │
+│     - Comparar múltiples fuentes        │
+└─────────────────────────────────────────┘
+```
+
+#### 13.6.3 Kleros Post-Cuántico
+
+**Arquitectura Propuesta:**
+
+```
+KLEROS v2.0 (Quantum-Resistant):
+
+┌─────────────────────────────────────────┐
+│         CAPA DE DISPUTA                 │
+│  - Firma PQ para iniciar disputa        │
+│  - Evidencia multi-hash                 │
+│  - Depósitos en contrato PQ-safe        │
+├─────────────────────────────────────────┤
+│         CAPA DE JURADO                  │
+│  - Selección verifiable random (VRF-PQ) │
+│  - Identidad verificada multi-factor    │
+│  - Votación commit-reveal con PQ        │
+├─────────────────────────────────────────┤
+│         CAPA DE EJECUCIÓN               │
+│  - Verificación de decisión por quórum  │
+│  - Timelock con override de emergencia  │
+│  - Mecanismo de apelación PQ            │
+└─────────────────────────────────────────┘
+```
+
+**Protocolo de Votación de Jurados:**
+
+```solidity
+// Votación de jurado resistente a cuántica
+interface IQuantumJuryVoting {
+    struct JurorVote {
+        bytes32 commitment;      // Hash(voto || nonce || firma_PQ)
+        bool revealed;
+        uint8 vote;             // 0 = Recusado, 1 = Party A, 2 = Party B
+        bytes pqSignature;
+    }
+
+    // Fase 1: Compromiso
+    function commitVote(
+        uint256 disputeId,
+        bytes32 commitment
+    ) external;
+
+    // Fase 2: Revelación
+    function revealVote(
+        uint256 disputeId,
+        uint8 vote,
+        bytes32 nonce,
+        bytes calldata pqSignature
+    ) external;
+
+    // Verificación: Solo contar votos con firma PQ válida
+    function tallyVotes(uint256 disputeId) external returns (uint8 winner);
+}
+```
+
+#### 13.6.4 Enforcement en la Era Cuántica
+
+**On-Chain (Mejorado):**
+
+```
+Ejecución Automática Post-Cuántica:
+
+1. Decisión de Kleros emitida
+2. Período de verificación (24h)
+   - Cualquiera puede desafiar con prueba de manipulación
+   - Verificación de firmas PQ de jurados
+3. Si no hay desafío: ejecución automática
+4. Si hay desafío: escalación a tribunal ampliado
+```
+
+**Off-Chain (Integración Legal):**
+
+El reconocimiento de laudos de Kleros por tribunales tradicionales requiere:
+
+1.  **Estándares de Evidencia:**
+    -   Tribunales deben aceptar evidencia digital con firmas PQ
+    -   Peritos en criptografía para verificar autenticidad
+
+2.  **Procedimiento de Verificación:**
+    ```
+    Para enforcement en tribunal tradicional:
+    1. Presentar laudo de Kleros con todas las firmas
+    2. Perito verifica:
+       a) Integridad de la evidencia
+       b) Autenticidad de las firmas (incluyendo PQ)
+       c) Correcta ejecución del protocolo
+    3. Tribunal evalúa si el proceso fue justo
+    4. Si se aprueba: enforcement tradicional
+    ```
+
+3.  **Cláusula de UNCITRAL Actualizada:**
+    ```
+    Las partes acuerdan que las disputas serán resueltas mediante
+    arbitraje descentralizado (Kleros), utilizando criptografía
+    post-cuántica para garantizar la autenticidad de evidencia
+    y decisiones. Las partes reconocen este laudo como vinculante
+    bajo la Convención de Nueva York.
+    ```
+
+#### 13.6.5 Nuevos Mecanismos de Resolución
+
+**1. Arbitraje con Pruebas Zero-Knowledge:**
+
+```
+Ventajas de ZK-STARK Arbitration:
+- Privacidad: Partes pueden probar claims sin revelar datos sensibles
+- Resistencia cuántica: STARKs son post-quantum safe
+- Verificabilidad: Cualquiera puede verificar la prueba
+
+Ejemplo:
+- Party A afirma: "Completé el trabajo según especificación"
+- Party A genera ZK-STARK proof de:
+  - Hash del código entregado matches especificación
+  - Timestamps de commits prueban completación
+  - Tests automatizados pasaron
+- Jurados verifican proof sin ver código fuente
+```
+
+**2. Oráculos de Disputa Cuánticamente Resistentes:**
+
+```
+┌─────────────────────────────────────────┐
+│       ORÁCULO DE DISPUTA PQ             │
+├─────────────────────────────────────────┤
+│ Inputs:                                 │
+│  - Evidencia hasheada (multi-algo)      │
+│  - Claims de ambas partes (firmadas PQ) │
+│  - Criterios de resolución              │
+├─────────────────────────────────────────┤
+│ Proceso:                                │
+│  - Verificación de evidencia            │
+│  - Evaluación contra criterios          │
+│  - Votación de jurados (PQ)             │
+├─────────────────────────────────────────┤
+│ Output:                                 │
+│  - Decisión firmada por quórum PQ       │
+│  - Prueba de proceso justo (ZK)         │
+│  - Instrucciones de ejecución           │
+└─────────────────────────────────────────┘
+```
+
+**3. Escrows con Arbitraje Integrado:**
+
+```solidity
+// Escrow con arbitraje PQ integrado
+interface IQuantumEscrow {
+    // Crear escrow con árbitro designado
+    function createEscrow(
+        address payee,
+        address arbiter,
+        bytes calldata terms,
+        bytes calldata pqSignature
+    ) external payable returns (uint256 escrowId);
+
+    // Iniciar disputa
+    function initiateDispute(
+        uint256 escrowId,
+        bytes calldata evidence,
+        bytes calldata pqSignature
+    ) external;
+
+    // Árbitro resuelve (requiere firma PQ)
+    function resolve(
+        uint256 escrowId,
+        address winner,
+        bytes calldata decision,
+        bytes calldata arbiterPQSig
+    ) external;
+
+    // Ejecución automática post-decisión
+    function execute(uint256 escrowId) external;
+}
+```
+
+#### 13.6.6 Recomendaciones
+
+**Para Plataformas de Arbitraje:**
+
+1.  **Migrar a Firmas Híbridas:**
+    -   Implementar soporte para ECDSA + Dilithium
+    -   Requerir PQ para disputas de alto valor
+
+2.  **Fortalecer Evidencia:**
+    -   Multi-hash obligatorio
+    -   Timestamps en múltiples blockchains
+    -   Integración con autoridades de timestamp tradicionales
+
+3.  **Mejorar Selección de Jurados:**
+    -   VRF cuánticamente resistente
+    -   Verificación de identidad multi-factor
+    -   Rotación frecuente de jurados
+
+**Para Usuarios del Sistema:**
+
+1.  **Documentar Exhaustivamente:**
+    -   Mantener evidencia en múltiples formatos
+    -   Usar múltiples esquemas de firma
+    -   Timestamp en momento de creación
+
+2.  **Elegir Árbitros Preparados:**
+    -   Verificar que plataforma soporte PQ
+    -   Preferir sistemas con mecanismos de recuperación
+
+**Para NEBUAH:**
+
+1.  **Desarrollar estándares de evidencia post-cuántica**
+2.  **Crear framework de integración Kleros-tribunales tradicionales**
+3.  **Advocacy para reconocimiento legal de firmas PQ**
+4.  **Educación sobre preservación de evidencia digital**
+
+---
+
 **Conclusión del Capítulo 13:**
 
-El arbitraje descentralizado, con Kleros a la cabeza, es una pieza fundamental de la infraestructura de la DI SOCIETA. Proporciona un mecanismo de "justicia como servicio" que es global, eficiente y cripto-nativo. Aunque su principal fortaleza reside en el enforcement automático on-chain, los esfuerzos por integrarlo con los sistemas legales tradicionales son cruciales para su adopción generalizada. NEBUAH tiene un papel clave en la construcción de estos puentes, promoviendo el reconocimiento legal del arbitraje descentralizado y diseñando contratos híbridos que combinen lo mejor de ambos mundos.
+El arbitraje descentralizado, con Kleros a la cabeza, es una pieza fundamental de la infraestructura de la DI SOCIETA. Proporciona un mecanismo de "justicia como servicio" que es global, eficiente y cripto-nativo. Aunque su principal fortaleza reside en el enforcement automático on-chain, los esfuerzos por integrarlo con los sistemas legales tradicionales son cruciales para su adopción generalizada.
+
+La computación cuántica añade complejidad significativa: la autenticidad de la evidencia, la integridad del proceso de votación, y la validez de las decisiones dependen de criptografía que será vulnerable. La transición hacia sistemas de arbitraje cuánticamente resistentes debe comenzar ahora, mientras hay tiempo para desarrollar y probar nuevos mecanismos. NEBUAH tiene un papel clave en la construcción de estos puentes, promoviendo el reconocimiento legal del arbitraje descentralizado post-cuántico y diseñando contratos híbridos que combinen lo mejor de ambos mundos con la seguridad del futuro.
