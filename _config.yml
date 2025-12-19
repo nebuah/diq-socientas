@@ -3,6 +3,9 @@ description: "Documentación sobre la integración de sistemas centralizados y d
 baseurl: "/diq-socientas"
 url: "https://nebuah.github.io"
 
+# Logo
+logo: "/assets/images/logo.svg"
+
 # Theme
 theme: jekyll-theme-cayman
 # Alternative themes you can use:

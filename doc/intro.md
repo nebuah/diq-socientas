@@ -1,8 +1,6 @@
-De acuerdo. Procederé a separar el documento en capítulos, creando un documento por cada uno.
-
-Aquí está el primer documento, correspondiente a la **Introducción**.
-
----
+<div align="center">
+  <img src="../assets/images/logo.svg" alt="DI SOCIETA Logo" width="120" height="120">
+</div>
 
 # INTRODUCCIÓN
 

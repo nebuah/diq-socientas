@@ -35,39 +35,63 @@ Las licitaciones públicas en Santa Fe (y Argentina en general) enfrentan:
 
 **Solución: Plataforma "LicitaSF" basada en Blockchain:**
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    LICITASF - LICITACIONES ON-CHAIN         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  FASE 1: PUBLICACIÓN          FASE 2: OFERTAS              │
-│  ┌──────────────────┐         ┌──────────────────┐         │
-│  │ Pliego en IPFS   │         │ Ofertas cifradas │         │
-│  │ Hash en blockchain│        │ (commit-reveal)  │         │
-│  │ Inmutable        │         │ Imposible ver    │         │
-│  │                  │         │ antes de cierre  │         │
-│  └────────┬─────────┘         └────────┬─────────┘         │
-│           │                            │                    │
-│           ▼                            ▼                    │
-│  FASE 3: APERTURA             FASE 4: ADJUDICACIÓN         │
-│  ┌──────────────────┐         ┌──────────────────┐         │
-│  │ Reveal automático│         │ Criterios en     │         │
-│  │ en fecha/hora    │         │ smart contract   │         │
-│  │ predeterminada   │         │ Evaluación       │         │
-│  │                  │         │ auditable        │         │
-│  └────────┬─────────┘         └────────┬─────────┘         │
-│           │                            │                    │
-│           └────────────┬───────────────┘                    │
-│                        ▼                                    │
-│           FASE 5: EJECUCIÓN Y PAGO                         │
-│           ┌──────────────────┐                              │
-│           │ Hitos verificables│                             │
-│           │ Pagos automáticos │                             │
-│           │ Auditoría pública │                             │
-│           └──────────────────┘                              │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+<div class="diagram-container" style="overflow-x: auto; margin: 2em 0;">
+<svg viewBox="0 0 550 380" width="100%" style="max-width: 550px; font-family: system-ui, sans-serif; display: block; margin: 0 auto;">
+  <!-- Title -->
+  <rect x="25" y="10" width="500" height="30" rx="5" fill="#2c3e50"/>
+  <text x="275" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="white">LICITASF - LICITACIONES ON-CHAIN</text>
+
+  <!-- Phase 1: Publication -->
+  <rect x="50" y="55" width="200" height="80" rx="8" fill="#3498db"/>
+  <text x="150" y="72" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">FASE 1</text>
+  <text x="150" y="88" text-anchor="middle" font-size="11" font-weight="bold" fill="white">PUBLICACIÓN</text>
+  <text x="150" y="105" text-anchor="middle" font-size="9" fill="white">Pliego en IPFS</text>
+  <text x="150" y="118" text-anchor="middle" font-size="9" fill="white">Hash en blockchain • Inmutable</text>
+
+  <!-- Phase 2: Offers -->
+  <rect x="300" y="55" width="200" height="80" rx="8" fill="#9b59b6"/>
+  <text x="400" y="72" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">FASE 2</text>
+  <text x="400" y="88" text-anchor="middle" font-size="11" font-weight="bold" fill="white">OFERTAS</text>
+  <text x="400" y="105" text-anchor="middle" font-size="9" fill="white">Ofertas cifradas (commit-reveal)</text>
+  <text x="400" y="118" text-anchor="middle" font-size="9" fill="white">Imposible ver antes de cierre</text>
+
+  <!-- Arrows down -->
+  <path d="M150 135 L150 155" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead2)"/>
+  <path d="M400 135 L400 155" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead2)"/>
+
+  <!-- Phase 3: Opening -->
+  <rect x="50" y="160" width="200" height="80" rx="8" fill="#e74c3c"/>
+  <text x="150" y="177" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">FASE 3</text>
+  <text x="150" y="193" text-anchor="middle" font-size="11" font-weight="bold" fill="white">APERTURA</text>
+  <text x="150" y="210" text-anchor="middle" font-size="9" fill="white">Reveal automático</text>
+  <text x="150" y="223" text-anchor="middle" font-size="9" fill="white">en fecha/hora predeterminada</text>
+
+  <!-- Phase 4: Award -->
+  <rect x="300" y="160" width="200" height="80" rx="8" fill="#f39c12"/>
+  <text x="400" y="177" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">FASE 4</text>
+  <text x="400" y="193" text-anchor="middle" font-size="11" font-weight="bold" fill="white">ADJUDICACIÓN</text>
+  <text x="400" y="210" text-anchor="middle" font-size="9" fill="white">Criterios en smart contract</text>
+  <text x="400" y="223" text-anchor="middle" font-size="9" fill="white">Evaluación auditable</text>
+
+  <!-- Converging arrows -->
+  <path d="M150 240 L150 260 L275 275" stroke="#7f8c8d" stroke-width="2"/>
+  <path d="M400 240 L400 260 L275 275" stroke="#7f8c8d" stroke-width="2"/>
+  <path d="M275 275 L275 290" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead2)"/>
+
+  <!-- Phase 5: Execution -->
+  <rect x="150" y="295" width="250" height="70" rx="8" fill="#27ae60"/>
+  <text x="275" y="315" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.7)">FASE 5</text>
+  <text x="275" y="332" text-anchor="middle" font-size="12" font-weight="bold" fill="white">EJECUCIÓN Y PAGO</text>
+  <text x="275" y="352" text-anchor="middle" font-size="9" fill="white">Hitos verificables • Pagos automáticos • Auditoría pública</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+</svg>
+</div>
 
 **Arquitectura Técnica:**
 

@@ -3,7 +3,13 @@ layout: default
 title: Inicio
 ---
 
-# DI SOCIETA - NEBUAH
+<div align="center">
+  <img src="assets/images/logo.svg" alt="DI SOCIETA Logo - Quantum Wave Function Collapse" width="150" height="150">
+  <h1>DI SOCIETA - NEBUAH</h1>
+  <p><em>Convergencia de la descentralización hacia la implementación concreta</em></p>
+</div>
+
+---
 
 ## Bienvenido a la Documentación
 
