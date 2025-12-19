@@ -12,6 +12,16 @@ Nos encontramos en un momento de transformación civilizatoria. La irrupción de
 
 El término DI SOCIETA es deliberadamente ambivalente. "DI" evoca tanto lo **Digital** como lo **Descentralizado**, dos características definitorias de este nuevo orden social. "SOCIETA" —derivado del latín *societas*— conecta este fenómeno contemporáneo con raíces profundas en el derecho romano y reconoce el origen lingüístico común de las lenguas latinoamericanas. La DI SOCIETA no es meramente una "sociedad digital" en el sentido de una sociedad que usa tecnología digital, sino una forma radicalmente nueva de organización social construida sobre principios descentralizados, autónomos y universales.
 
+> **¿Qué significa esto en la práctica?**
+>
+> - Un municipio de Santa Fe que protege su presupuesto de la inflación usando monedas digitales estables
+> - Un productor agrícola que demuestra el origen de sus productos con un código QR verificable
+> - Un ciudadano que puede ver en tiempo real cómo se gasta cada peso de sus impuestos
+> - Una cooperativa que toma decisiones por votación digital transparente
+> - Un acuerdo comercial internacional que se cumple automáticamente mediante contratos inteligentes
+
+Estas no son fantasías futuristas. Son posibilidades técnicas reales que ya se implementan en otras partes del mundo. Este documento explica cómo funcionan y cómo pueden aplicarse en Argentina.
+
 ## La Confrontación Emergente
 
 En 2023, con la irrupción masiva de la inteligencia artificial, el mundo descentralizado enfrenta una encrucijada crítica. Lejos de consolidarse como alternativa legítima al orden centralizado, la DI SOCIETA se encuentra crecientemente controvertida, cuestionada y, en algunos contextos, perseguida. La lista de acciones hostiles crece constantemente:
@@ -66,15 +76,40 @@ Adoptamos un tono académico riguroso pero accesible, reconociendo que esta mate
 
 **Parte I** establece fundamentos conceptuales: qué es la DI SOCIETA, de dónde viene históricamente, qué principios filosóficos la animan, y cómo entender la tensión centralización-descentralización.
 
-**Parte II** mapea el panorama actual: regulaciones globales, marcos legales, infraestructura técnica (blockchain, Ethereum), y sistemas económicos (DeFi, criptomonedas).
+**Parte II** mapea el panorama actual: regulaciones globales, marcos legales, infraestructura técnica (blockchain, Ethereum), y sistemas económicos (DeFi, criptomonedas). Incluye análisis de seguridad post-cuántica.
 
 **Parte III** analiza los elementos constitutivos: formas organizativas (DAOs), contratos inteligentes, instrumentos económicos (tokens, criptomonedas), gobernanza y resolución de conflictos.
 
 **Parte IV** propone marcos de integración: el modelo Wyoming como caso exitoso, el desarrollo de Lex Societa como marco normativo paralelo a la Lex Mercatoria, el rol de NEBUAH, y vías prácticas de implementación.
 
-**Parte V** presenta aplicaciones concretas: el caso de cooperativas municipales con sistemas de recaudación en criptomonedas y presupuesto participativo tokenizado, junto con otras implementaciones.
+**Parte V** presenta aplicaciones concretas generales: el caso de cooperativas municipales con sistemas de recaudación en criptomonedas y presupuesto participativo tokenizado, junto con otras implementaciones.
+
+**Parte VI** desarrolla casos de estudio específicos para Argentina, organizados por nivel de gobierno:
+- Aplicaciones municipales en la Provincia de Santa Fe
+- Proyectos del Gobierno Provincial de Santa Fe
+- Proyectos nacionales con dimensión internacional
+- Implementación del Acuerdo Comercial Estados Unidos - Argentina
 
 La **Conclusión** sintetiza aprendizajes clave y plantea un llamado a la acción para construir futuro de integración inteligente.
+
+## Guía de Lectura por Audiencia
+
+Este documento puede leerse de diferentes maneras según su perfil:
+
+**Si usted es funcionario municipal o provincial:**
+Comience por los Capítulos 18, 20 y 21 (aplicaciones prácticas para gobierno local). Luego lea el Capítulo 14 (modelo Wyoming) para entender el marco legal que permite estas innovaciones. Consulte los capítulos técnicos (7-13) según necesidad específica.
+
+**Si usted es ciudadano interesado:**
+Lea esta Introducción y la Conclusión primero para obtener el panorama general. Luego explore el Capítulo 18 (cómo funcionan las cooperativas con gobernanza digital) y los ejemplos de Santa Fe en los Capítulos 20-21. Los capítulos técnicos son opcionales.
+
+**Si usted es desarrollador o técnico:**
+Los Capítulos 7-13 son su punto de entrada, con especial atención a las secciones de seguridad cuántica. Los Capítulos 20-23 muestran cómo se implementan estos sistemas en la práctica.
+
+**Si usted es legislador o regulador:**
+El Capítulo 14 (modelo Wyoming) y 15 (Lex Societa) son esenciales para entender los marcos legales. Los Capítulos 20-23 muestran implementaciones concretas que pueden informar políticas públicas.
+
+**Si usted trabaja en comercio exterior o relaciones internacionales:**
+Los Capítulos 22 y 23 abordan específicamente proyectos con dimensión internacional, incluyendo MERCOSUR y el acuerdo comercial con Estados Unidos.
 
 ## Posicionamiento Ético y Político
 
