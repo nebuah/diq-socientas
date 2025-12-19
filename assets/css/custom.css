@@ -1,0 +1,202 @@
+/* DI SOCIETA Custom Styles - Quantum Theme */
+/* Color scheme based on logo: #00ffaa (cyan/mint) */
+
+:root {
+  --di-primary: #00ffaa;
+  --di-primary-dark: #00cc88;
+  --di-primary-light: #66ffcc;
+  --di-bg-dark: #1a1a2e;
+  --di-bg-darker: #0f0f1a;
+  --di-text-light: #e8e8e8;
+  --di-accent: #00d4ff;
+  --di-warning: #ffaa00;
+  --di-success: #00ff88;
+}
+
+/* Header styling to match logo */
+.page-header {
+  background: linear-gradient(135deg, var(--di-bg-darker) 0%, var(--di-bg-dark) 50%, #16213e 100%) !important;
+  border-bottom: 3px solid var(--di-primary);
+}
+
+.page-header h1.project-name {
+  color: var(--di-primary) !important;
+  text-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
+}
+
+.page-header h2.project-tagline {
+  color: var(--di-text-light) !important;
+  opacity: 0.9;
+}
+
+/* Logo in header */
+.header-logo {
+  display: block;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 170, 0.6));
+}
+
+/* Links */
+a {
+  color: var(--di-primary-dark);
+}
+
+a:hover {
+  color: var(--di-primary);
+  text-decoration: underline;
+}
+
+.page-header .btn {
+  background-color: transparent;
+  border-color: var(--di-primary);
+  color: var(--di-primary);
+}
+
+.page-header .btn:hover {
+  background-color: var(--di-primary);
+  color: var(--di-bg-dark);
+}
+
+/* Headings */
+.main-content h1,
+.main-content h2 {
+  color: var(--di-bg-dark);
+  border-bottom-color: var(--di-primary);
+}
+
+.main-content h3,
+.main-content h4 {
+  color: #2c3e50;
+}
+
+/* Code blocks */
+.main-content code {
+  background-color: #f0faf5;
+  border: 1px solid var(--di-primary-light);
+  color: #1a5a3a;
+}
+
+.main-content pre {
+  background-color: var(--di-bg-dark);
+  border: 1px solid var(--di-primary);
+  border-radius: 8px;
+}
+
+.main-content pre code {
+  background-color: transparent;
+  border: none;
+  color: var(--di-text-light);
+}
+
+/* Blockquotes */
+.main-content blockquote {
+  border-left: 4px solid var(--di-primary);
+  background: linear-gradient(90deg, rgba(0, 255, 170, 0.1) 0%, transparent 100%);
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Tables */
+.main-content table th {
+  background-color: var(--di-bg-dark);
+  color: var(--di-primary);
+}
+
+.main-content table td {
+  border-color: var(--di-primary-light);
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: rgba(0, 255, 170, 0.05);
+}
+
+/* Diagrams container */
+.diagram-container {
+  background: linear-gradient(135deg, #f8fffe 0%, #f0fffa 100%);
+  border: 2px solid var(--di-primary);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 255, 170, 0.15);
+}
+
+/* Chapter logo styling */
+.chapter-logo {
+  display: block;
+  margin: 0 auto 2rem;
+  opacity: 0.8;
+}
+
+.chapter-logo:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 170, 0.8));
+  transition: all 0.3s ease;
+}
+
+/* Navigation styling */
+.site-nav {
+  background-color: var(--di-bg-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  color: var(--di-primary);
+  margin-right: 1.5rem;
+}
+
+.site-nav a:hover {
+  color: var(--di-primary-light);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 2px solid var(--di-primary);
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 170, 0.05) 100%);
+}
+
+/* Highlighted sections */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(0, 255, 170, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+  border: 1px solid var(--di-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+  .header-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .chapter-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Animation for logo */
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 170, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 170, 0.8));
+  }
+}
+
+.logo-animated {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Part dividers */
+.part-header {
+  background: var(--di-bg-dark);
+  color: var(--di-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 2rem 0 1rem;
+  font-weight: bold;
+}

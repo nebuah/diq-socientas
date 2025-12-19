@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../assets/images/logo.svg" alt="DI SOCIETA Logo" width="120" height="120">
+  <img src="../assets/images/logo.svg" alt="DI SOCIETA Logo" width="100" height="100" class="chapter-logo">
 </div>
 
 # INTRODUCCIÓN
