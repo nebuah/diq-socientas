@@ -14,19 +14,20 @@ jobs:
   auto-merge:
     runs-on: ubuntu-latest
     steps:
-      - name: Merge this PR into main
+      - name: Auto-merge this PR into main
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
-            console.log(`Attempting to merge PR #${pr.number}...`);
 
-            await github.pulls.merge({
+            console.log(`Attempting to merge PR #${pr.number} into main...`);
+
+            const res = await github.rest.pulls.merge({
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: pr.number,
-              merge_method: "merge" // or "squash" / "rebase"
+              merge_method: "merge", // or "squash" / "rebase"
             });
 
-            console.log(`PR #${pr.number} merged successfully.`);
+            console.log("Merge result:", res.data);
