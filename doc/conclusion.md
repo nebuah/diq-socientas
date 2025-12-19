@@ -1,6 +1,7 @@
-Aquí tienes el capítulo final: la Conclusión.
+<div align="center">
+  <img src="../assets/images/logo.svg" alt="DI SOCIETA Logo" width="100" height="100" class="chapter-logo">
+</div>
 
----
 # CONCLUSIÓN: Hacia la Integración Superadora
 
 Hemos recorrido un vasto territorio conceptual, técnico, histórico y legal. Desde los principios filosóficos de la descentralización hasta los detalles prácticos de la legislación de Wyoming; desde la *societas* romana hasta las finanzas descentralizadas. El hilo conductor ha sido la tensión fundamental entre dos grandes paradigmas de organización humana: el orden centralizado del Estado-nación y el emergente orden descentralizado de la DI SOCIETA.

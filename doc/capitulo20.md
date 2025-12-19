@@ -28,59 +28,62 @@ Creación de una red de cooperativas municipales interconectadas que mantienen s
 
 **Arquitectura Técnica:**
 
-<div class="diagram-container" style="overflow-x: auto; margin: 2em 0;">
+<div class="diagram-container" style="overflow-x: auto; margin: 2em 0; background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%); border: 2px solid #00ffaa; border-radius: 12px; padding: 1rem;">
 <svg viewBox="0 0 550 320" width="100%" style="max-width: 550px; font-family: system-ui, sans-serif; display: block; margin: 0 auto;">
   <!-- Title -->
-  <rect x="25" y="10" width="500" height="30" rx="5" fill="#2c3e50"/>
-  <text x="275" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="white">RED TESORO SANTA FE</text>
+  <rect x="25" y="10" width="500" height="30" rx="5" fill="#00ffaa"/>
+  <text x="275" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f0f1a">RED TESORO SANTA FE</text>
 
   <!-- Municipal Treasuries -->
-  <rect x="50" y="55" width="100" height="50" rx="8" fill="#3498db"/>
-  <text x="100" y="75" text-anchor="middle" font-size="11" fill="white">Rafaela</text>
-  <text x="100" y="90" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Treasury</text>
+  <rect x="50" y="55" width="100" height="50" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="50" y="55" width="100" height="50" rx="8" fill="#00aa77" opacity="0.3"/>
+  <text x="100" y="75" text-anchor="middle" font-size="11" fill="#00ffaa">Rafaela</text>
+  <text x="100" y="90" text-anchor="middle" font-size="10" fill="#888">Treasury</text>
 
-  <rect x="200" y="55" width="100" height="50" rx="8" fill="#3498db"/>
-  <text x="250" y="75" text-anchor="middle" font-size="11" fill="white">Venado Tuerto</text>
-  <text x="250" y="90" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Treasury</text>
+  <rect x="200" y="55" width="100" height="50" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="200" y="55" width="100" height="50" rx="8" fill="#00aa77" opacity="0.3"/>
+  <text x="250" y="75" text-anchor="middle" font-size="11" fill="#00ffaa">Venado Tuerto</text>
+  <text x="250" y="90" text-anchor="middle" font-size="10" fill="#888">Treasury</text>
 
-  <rect x="350" y="55" width="100" height="50" rx="8" fill="#3498db"/>
-  <text x="400" y="75" text-anchor="middle" font-size="11" fill="white">Reconquista</text>
-  <text x="400" y="90" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Treasury</text>
+  <rect x="350" y="55" width="100" height="50" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="350" y="55" width="100" height="50" rx="8" fill="#00aa77" opacity="0.3"/>
+  <text x="400" y="75" text-anchor="middle" font-size="11" fill="#00ffaa">Reconquista</text>
+  <text x="400" y="90" text-anchor="middle" font-size="10" fill="#888">Treasury</text>
 
   <!-- Connections between treasuries -->
-  <line x1="150" y1="80" x2="200" y2="80" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="5,3"/>
-  <line x1="300" y1="80" x2="350" y2="80" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="150" y1="80" x2="200" y2="80" stroke="#00ffaa" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
+  <line x1="300" y1="80" x2="350" y2="80" stroke="#00ffaa" stroke-width="2" stroke-dasharray="5,3" opacity="0.6"/>
 
   <!-- Lines down to central pool -->
-  <line x1="100" y1="105" x2="100" y2="130" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="250" y1="105" x2="250" y2="140" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="400" y1="105" x2="400" y2="130" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="100" y1="130" x2="250" y2="140" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="400" y1="130" x2="250" y2="140" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="100" y1="105" x2="100" y2="130" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="250" y1="105" x2="250" y2="140" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="400" y1="105" x2="400" y2="130" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="100" y1="130" x2="250" y2="140" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="400" y1="130" x2="250" y2="140" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
 
   <!-- Central Pool -->
-  <rect x="175" y="145" width="150" height="60" rx="10" fill="#9b59b6"/>
-  <text x="250" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Pool Central</text>
-  <text x="250" y="182" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Multi-firma</text>
-  <text x="250" y="197" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.7)">(Arbitrum L2)</text>
+  <rect x="175" y="145" width="150" height="60" rx="10" fill="#00ffaa"/>
+  <text x="250" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f0f1a">Pool Central</text>
+  <text x="250" y="182" text-anchor="middle" font-size="10" fill="#1a1a2e">Multi-firma</text>
+  <text x="250" y="197" text-anchor="middle" font-size="9" fill="#2a2a3e">(Arbitrum L2)</text>
 
   <!-- Lines down to stablecoins -->
-  <line x1="250" y1="205" x2="250" y2="225" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="100" y1="235" x2="250" y2="225" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="400" y1="235" x2="250" y2="225" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="250" y1="205" x2="250" y2="225" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="100" y1="235" x2="250" y2="225" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="400" y1="235" x2="250" y2="225" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
 
   <!-- Stablecoins -->
-  <rect x="55" y="240" width="90" height="55" rx="8" fill="#27ae60"/>
-  <text x="100" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="white">USDC</text>
-  <text x="100" y="280" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)">40%</text>
+  <rect x="55" y="240" width="90" height="55" rx="8" fill="#00cc88"/>
+  <text x="100" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f0f1a">USDC</text>
+  <text x="100" y="280" text-anchor="middle" font-size="11" fill="#1a1a2e">40%</text>
 
-  <rect x="205" y="240" width="90" height="55" rx="8" fill="#f39c12"/>
-  <text x="250" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="white">DAI</text>
-  <text x="250" y="280" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)">40%</text>
+  <rect x="205" y="240" width="90" height="55" rx="8" fill="#00aa77"/>
+  <text x="250" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="#e0e0e0">DAI</text>
+  <text x="250" y="280" text-anchor="middle" font-size="11" fill="#888">40%</text>
 
-  <rect x="355" y="240" width="90" height="55" rx="8" fill="#1abc9c"/>
-  <text x="400" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="white">USDT</text>
-  <text x="400" y="280" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.9)">20%</text>
+  <rect x="355" y="240" width="90" height="55" rx="8" fill="#008866"/>
+  <text x="400" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="#e0e0e0">USDT</text>
+  <text x="400" y="280" text-anchor="middle" font-size="11" fill="#888">20%</text>
 </svg>
 </div>
 
@@ -145,43 +148,45 @@ Implementación de un sistema de identidad auto-soberana para ciudadanos rosarin
 
 **Arquitectura:**
 
-<div class="diagram-container" style="overflow-x: auto; margin: 2em 0;">
+<div class="diagram-container" style="overflow-x: auto; margin: 2em 0; background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%); border: 2px solid #00ffaa; border-radius: 12px; padding: 1rem;">
 <svg viewBox="0 0 500 300" width="100%" style="max-width: 500px; font-family: system-ui, sans-serif; display: block; margin: 0 auto;">
   <!-- Title -->
-  <rect x="25" y="10" width="450" height="30" rx="5" fill="#2c3e50"/>
-  <text x="250" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="white">ROSARIO ID - IDENTIDAD CÍVICA</text>
+  <rect x="25" y="10" width="450" height="30" rx="5" fill="#00ffaa"/>
+  <text x="250" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f0f1a">ROSARIO ID - IDENTIDAD CÍVICA</text>
 
   <!-- Credencial Verificable -->
-  <rect x="50" y="55" width="130" height="60" rx="8" fill="#3498db"/>
-  <text x="115" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Credencial</text>
-  <text x="115" y="93" text-anchor="middle" font-size="10" fill="white">Verificable</text>
-  <text x="115" y="106" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">(DID + SBT)</text>
+  <rect x="50" y="55" width="130" height="60" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="50" y="55" width="130" height="60" rx="8" fill="#00aa77" opacity="0.3"/>
+  <text x="115" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#00ffaa">Credencial</text>
+  <text x="115" y="93" text-anchor="middle" font-size="10" fill="#e0e0e0">Verificable</text>
+  <text x="115" y="106" text-anchor="middle" font-size="9" fill="#888">(DID + SBT)</text>
 
   <!-- Servicios Municipales -->
-  <rect x="320" y="55" width="130" height="60" rx="8" fill="#27ae60"/>
-  <text x="385" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Servicios</text>
-  <text x="385" y="93" text-anchor="middle" font-size="10" fill="white">Municipales</text>
+  <rect x="320" y="55" width="130" height="60" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="320" y="55" width="130" height="60" rx="8" fill="#00aa77" opacity="0.3"/>
+  <text x="385" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#00ffaa">Servicios</text>
+  <text x="385" y="93" text-anchor="middle" font-size="10" fill="#e0e0e0">Municipales</text>
 
   <!-- Connection arrow -->
-  <line x1="180" y1="85" x2="320" y2="85" stroke="#7f8c8d" stroke-width="2"/>
-  <polygon points="315,80 325,85 315,90" fill="#7f8c8d"/>
-  <polygon points="185,80 175,85 185,90" fill="#7f8c8d"/>
+  <line x1="180" y1="85" x2="320" y2="85" stroke="#00ffaa" stroke-width="2"/>
+  <polygon points="315,80 325,85 315,90" fill="#00ffaa"/>
+  <polygon points="185,80 175,85 185,90" fill="#00ffaa"/>
 
   <!-- Lines down -->
-  <line x1="115" y1="115" x2="115" y2="140" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="385" y1="115" x2="385" y2="140" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="115" y1="140" x2="250" y2="155" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="385" y1="140" x2="250" y2="155" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="115" y1="115" x2="115" y2="140" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="385" y1="115" x2="385" y2="140" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="115" y1="140" x2="250" y2="155" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="385" y1="140" x2="250" y2="155" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
 
   <!-- Atributos Verificados box -->
-  <rect x="75" y="160" width="350" height="120" rx="8" fill="#9b59b6"/>
-  <text x="250" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="white">ATRIBUTOS VERIFICADOS</text>
-  <line x1="85" y1="190" x2="415" y2="190" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
-  <text x="100" y="210" font-size="10" fill="white">• Residencia en Rosario (Rentas)</text>
-  <text x="100" y="225" font-size="10" fill="white">• Contribuyente al día (TGI, TFI)</text>
-  <text x="100" y="240" font-size="10" fill="white">• Participación en asambleas barriales</text>
-  <text x="100" y="255" font-size="10" fill="white">• Voluntariado registrado</text>
-  <text x="100" y="270" font-size="10" fill="white">• Años de residencia</text>
+  <rect x="75" y="160" width="350" height="120" rx="8" fill="#00ffaa"/>
+  <text x="250" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f0f1a">ATRIBUTOS VERIFICADOS</text>
+  <line x1="85" y1="190" x2="415" y2="190" stroke="rgba(0,0,0,0.2)" stroke-width="1"/>
+  <text x="100" y="210" font-size="10" fill="#0f0f1a">• Residencia en Rosario (Rentas)</text>
+  <text x="100" y="225" font-size="10" fill="#0f0f1a">• Contribuyente al día (TGI, TFI)</text>
+  <text x="100" y="240" font-size="10" fill="#0f0f1a">• Participación en asambleas barriales</text>
+  <text x="100" y="255" font-size="10" fill="#0f0f1a">• Voluntariado registrado</text>
+  <text x="100" y="270" font-size="10" fill="#0f0f1a">• Años de residencia</text>
 </svg>
 </div>
 
@@ -229,57 +234,60 @@ El cinturón verde del Gran Rosario abastece de frutas y verduras frescas a más
 
 **Cooperativa de Productores con NFTs de Trazabilidad:**
 
-<div class="diagram-container" style="overflow-x: auto; margin: 2em 0;">
+<div class="diagram-container" style="overflow-x: auto; margin: 2em 0; background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%); border: 2px solid #00ffaa; border-radius: 12px; padding: 1rem;">
 <svg viewBox="0 0 520 300" width="100%" style="max-width: 520px; font-family: system-ui, sans-serif; display: block; margin: 0 auto;">
   <!-- Title -->
-  <rect x="25" y="10" width="470" height="30" rx="5" fill="#27ae60"/>
-  <text x="260" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="white">VERDE ROSARIO - TRAZABILIDAD AGRÍCOLA</text>
+  <rect x="25" y="10" width="470" height="30" rx="5" fill="#00ffaa"/>
+  <text x="260" y="30" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f0f1a">VERDE ROSARIO - TRAZABILIDAD AGRÍCOLA</text>
 
   <!-- Labels -->
-  <text x="85" y="58" text-anchor="middle" font-size="10" fill="#7f8c8d">PRODUCTOR</text>
-  <text x="260" y="58" text-anchor="middle" font-size="10" fill="#7f8c8d">TRANSPORTE</text>
-  <text x="435" y="58" text-anchor="middle" font-size="10" fill="#7f8c8d">PUNTO DE VENTA</text>
+  <text x="85" y="58" text-anchor="middle" font-size="10" fill="#00ffaa">PRODUCTOR</text>
+  <text x="260" y="58" text-anchor="middle" font-size="10" fill="#00ffaa">TRANSPORTE</text>
+  <text x="435" y="58" text-anchor="middle" font-size="10" fill="#00ffaa">PUNTO DE VENTA</text>
 
   <!-- Quinta -->
-  <rect x="40" y="65" width="90" height="50" rx="8" fill="#8e44ad"/>
-  <text x="85" y="88" text-anchor="middle" font-size="11" fill="white">Quinta</text>
-  <text x="85" y="103" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Zavalla</text>
+  <rect x="40" y="65" width="90" height="50" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="40" y="65" width="90" height="50" rx="8" fill="#00aa77" opacity="0.3"/>
+  <text x="85" y="88" text-anchor="middle" font-size="11" fill="#e0e0e0">Quinta</text>
+  <text x="85" y="103" text-anchor="middle" font-size="10" fill="#888">Zavalla</text>
 
   <!-- Arrow 1: NFT mint -->
-  <line x1="130" y1="90" x2="200" y2="90" stroke="#f39c12" stroke-width="3"/>
-  <polygon points="195,85 210,90 195,95" fill="#f39c12"/>
-  <text x="165" y="82" text-anchor="middle" font-size="9" fill="#f39c12" font-weight="bold">NFT mint</text>
+  <line x1="130" y1="90" x2="200" y2="90" stroke="#00ffaa" stroke-width="3"/>
+  <polygon points="195,85 210,90 195,95" fill="#00ffaa"/>
+  <text x="165" y="82" text-anchor="middle" font-size="9" fill="#00ffaa" font-weight="bold">NFT mint</text>
 
   <!-- Camión -->
-  <rect x="215" y="65" width="90" height="50" rx="8" fill="#3498db"/>
-  <text x="260" y="88" text-anchor="middle" font-size="11" fill="white">Camión</text>
-  <text x="260" y="103" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Coop</text>
+  <rect x="215" y="65" width="90" height="50" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="215" y="65" width="90" height="50" rx="8" fill="#00aa77" opacity="0.5"/>
+  <text x="260" y="88" text-anchor="middle" font-size="11" fill="#e0e0e0">Camión</text>
+  <text x="260" y="103" text-anchor="middle" font-size="10" fill="#888">Coop</text>
 
   <!-- Arrow 2: NFT update -->
-  <line x1="305" y1="90" x2="375" y2="90" stroke="#f39c12" stroke-width="3"/>
-  <polygon points="370,85 385,90 370,95" fill="#f39c12"/>
-  <text x="340" y="82" text-anchor="middle" font-size="9" fill="#f39c12" font-weight="bold">NFT update</text>
+  <line x1="305" y1="90" x2="375" y2="90" stroke="#00ffaa" stroke-width="3"/>
+  <polygon points="370,85 385,90 370,95" fill="#00ffaa"/>
+  <text x="340" y="82" text-anchor="middle" font-size="9" fill="#00ffaa" font-weight="bold">NFT update</text>
 
   <!-- Verdulería -->
-  <rect x="390" y="65" width="90" height="50" rx="8" fill="#e74c3c"/>
-  <text x="435" y="88" text-anchor="middle" font-size="11" fill="white">Verdulería</text>
-  <text x="435" y="103" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">Rosario</text>
+  <rect x="390" y="65" width="90" height="50" rx="8" fill="none" stroke="#00ffaa" stroke-width="2"/>
+  <rect x="390" y="65" width="90" height="50" rx="8" fill="#00aa77" opacity="0.7"/>
+  <text x="435" y="88" text-anchor="middle" font-size="11" fill="#e0e0e0">Verdulería</text>
+  <text x="435" y="103" text-anchor="middle" font-size="10" fill="#888">Rosario</text>
 
   <!-- Lines down to consumer -->
-  <line x1="85" y1="115" x2="85" y2="145" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="260" y1="115" x2="260" y2="165" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="435" y1="115" x2="435" y2="145" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="85" y1="145" x2="260" y2="165" stroke="#7f8c8d" stroke-width="2"/>
-  <line x1="435" y1="145" x2="260" y2="165" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="85" y1="115" x2="85" y2="145" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="260" y1="115" x2="260" y2="165" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="435" y1="115" x2="435" y2="145" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="85" y1="145" x2="260" y2="165" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
+  <line x1="435" y1="145" x2="260" y2="165" stroke="#00ffaa" stroke-width="2" opacity="0.7"/>
 
   <!-- Consumer box -->
-  <rect x="160" y="175" width="200" height="105" rx="10" fill="#2c3e50"/>
-  <text x="260" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#1abc9c">📱 CONSUMIDOR</text>
-  <text x="260" y="216" text-anchor="middle" font-size="10" fill="white">Escanea QR:</text>
-  <text x="175" y="235" font-size="10" fill="rgba(255,255,255,0.9)">• Origen geográfico</text>
-  <text x="175" y="250" font-size="10" fill="rgba(255,255,255,0.9)">• Nombre del productor</text>
-  <text x="175" y="265" font-size="10" fill="rgba(255,255,255,0.9)">• Fecha de cosecha</text>
-  <text x="175" y="280" font-size="10" fill="rgba(255,255,255,0.9)">• Certificaciones</text>
+  <rect x="160" y="175" width="200" height="105" rx="10" fill="#00ffaa"/>
+  <text x="260" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f0f1a">📱 CONSUMIDOR</text>
+  <text x="260" y="216" text-anchor="middle" font-size="10" fill="#1a1a2e">Escanea QR:</text>
+  <text x="175" y="235" font-size="10" fill="#0f0f1a">• Origen geográfico</text>
+  <text x="175" y="250" font-size="10" fill="#0f0f1a">• Nombre del productor</text>
+  <text x="175" y="265" font-size="10" fill="#0f0f1a">• Fecha de cosecha</text>
+  <text x="175" y="280" font-size="10" fill="#0f0f1a">• Certificaciones</text>
 </svg>
 </div>
 

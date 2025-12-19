@@ -4,8 +4,8 @@ title: Inicio
 ---
 
 <div align="center">
-  <img src="assets/images/logo.svg" alt="DI SOCIETA Logo - Quantum Wave Function Collapse" width="150" height="150">
-  <h1>DI SOCIETA - NEBUAH</h1>
+  <img src="assets/images/logo.svg" alt="DI SOCIETA Logo - Quantum Wave Function Collapse" width="150" height="150" class="header-logo logo-animated">
+  <h1 style="color: #00ffaa; text-shadow: 0 0 20px rgba(0, 255, 170, 0.5);">DI SOCIETA - NEBUAH</h1>
   <p><em>Convergencia de la descentralización hacia la implementación concreta</em></p>
 </div>
 
