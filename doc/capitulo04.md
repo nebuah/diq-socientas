@@ -54,16 +54,67 @@ Telecomunicaciones era industria regulada nacionalmente. Internet descentralizad
 
 Más que dicotomía binaria, existe espectro:
 
-```
-Máxima Centralización ←──────────────────────→ Máxima Descentralización
+<div class="diagram-container" style="overflow-x: auto; margin: 2em 0;">
+<svg viewBox="0 0 800 200" width="100%" height="200" style="max-width: 100%; font-family: system-ui, sans-serif;">
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Espectro Centralización-Descentralización</text>
 
-Dictadura     Estado-nación    Federalismo    Lex Mercatoria    Blockchain    Anarquía
-Totalitaria    Unitario        Democrático    Privada           Protocol      Total
-     │              │               │              │                │            │
-   China          Francia          USA         Arbitraje         Ethereum      Utopía
-   Digital                                      ICC                            Imposible
-   Yuan
-```
+  <!-- Main axis -->
+  <defs>
+    <linearGradient id="spectrum-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c"/>
+      <stop offset="50%" style="stop-color:#f1c40f"/>
+      <stop offset="100%" style="stop-color:#27ae60"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  <rect x="60" y="45" width="680" height="8" rx="4" fill="url(#spectrum-gradient)"/>
+  <text x="60" y="40" font-size="11" fill="#666">← Máxima Centralización</text>
+  <text x="740" y="40" text-anchor="end" font-size="11" fill="#666">Máxima Descentralización →</text>
+
+  <!-- Points on spectrum -->
+  <!-- Dictadura -->
+  <circle cx="90" cy="49" r="6" fill="#c0392b"/>
+  <text x="90" y="80" text-anchor="middle" font-size="10" fill="#333">Dictadura</text>
+  <text x="90" y="92" text-anchor="middle" font-size="9" fill="#666">Totalitaria</text>
+  <text x="90" y="110" text-anchor="middle" font-size="9" fill="#888" font-style="italic">China Digital Yuan</text>
+
+  <!-- Estado-nación -->
+  <circle cx="220" cy="49" r="6" fill="#e74c3c"/>
+  <text x="220" y="80" text-anchor="middle" font-size="10" fill="#333">Estado-nación</text>
+  <text x="220" y="92" text-anchor="middle" font-size="9" fill="#666">Unitario</text>
+  <text x="220" y="110" text-anchor="middle" font-size="9" fill="#888" font-style="italic">Francia</text>
+
+  <!-- Federalismo -->
+  <circle cx="360" cy="49" r="6" fill="#f39c12"/>
+  <text x="360" y="80" text-anchor="middle" font-size="10" fill="#333">Federalismo</text>
+  <text x="360" y="92" text-anchor="middle" font-size="9" fill="#666">Democrático</text>
+  <text x="360" y="110" text-anchor="middle" font-size="9" fill="#888" font-style="italic">USA</text>
+
+  <!-- Lex Mercatoria -->
+  <circle cx="500" cy="49" r="6" fill="#2ecc71"/>
+  <text x="500" y="80" text-anchor="middle" font-size="10" fill="#333">Lex Mercatoria</text>
+  <text x="500" y="92" text-anchor="middle" font-size="9" fill="#666">Privada</text>
+  <text x="500" y="110" text-anchor="middle" font-size="9" fill="#888" font-style="italic">Arbitraje ICC</text>
+
+  <!-- Blockchain -->
+  <circle cx="620" cy="49" r="6" fill="#27ae60"/>
+  <text x="620" y="80" text-anchor="middle" font-size="10" fill="#333">Blockchain</text>
+  <text x="620" y="92" text-anchor="middle" font-size="9" fill="#666">Protocol</text>
+  <text x="620" y="110" text-anchor="middle" font-size="9" fill="#888" font-style="italic">Ethereum</text>
+
+  <!-- Anarquía -->
+  <circle cx="710" cy="49" r="6" fill="#1abc9c" stroke="#999" stroke-dasharray="2"/>
+  <text x="710" y="80" text-anchor="middle" font-size="10" fill="#999">Anarquía</text>
+  <text x="710" y="92" text-anchor="middle" font-size="9" fill="#999">Total</text>
+  <text x="710" y="110" text-anchor="middle" font-size="9" fill="#999" font-style="italic">Utopía Imposible</text>
+
+  <!-- Legend -->
+  <text x="400" y="145" text-anchor="middle" font-size="10" fill="#666">Los sistemas reales ocupan puntos intermedios y se mueven en el espectro</text>
+</svg>
+</div>
 
 Sistemas reales ocupan puntos intermedios y se mueven en espectro:
 -   **Bitcoin:** Muy descentralizado en protocol layer, pero exchanges centralizados concentran acceso
