@@ -87,6 +87,7 @@ Adoptamos un tono académico riguroso pero accesible, reconociendo que esta mate
 - Proyectos del Gobierno Provincial de Santa Fe
 - Proyectos nacionales con dimensión internacional
 - Implementación del Acuerdo Comercial Estados Unidos - Argentina
+- Análisis de la Misión Genesis y oportunidades de integración con IA, computación cuántica y descubrimiento científico
 
 La **Conclusión** sintetiza aprendizajes clave y plantea un llamado a la acción para construir futuro de integración inteligente.
 
