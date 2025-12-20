@@ -25,6 +25,9 @@ Este documento propone una **tercera vía**: la **integración superadora** que 
 
 ## Novedades
 
+### Misión Genesis - IA y Computación Cuántica para la Ciencia
+**Nuevo Capítulo 24:** Análisis completo de la **Misión Genesis** (noviembre 2025), la iniciativa presidencial de EE.UU. para acelerar el descubrimiento científico mediante IA, supercomputación y sistemas cuánticos. Incluye propuestas de integración con tecnologías DI SOCIETA y oportunidades para Argentina.
+
 ### Computación Cuántica y Seguridad
 Los capítulos técnicos (7-13) incluyen análisis exhaustivo sobre el impacto de la **computación cuántica** en sistemas descentralizados: amenazas del algoritmo de Shor, criptografía post-cuántica NIST, firmas híbridas, y hojas de ruta de migración 2025-2032.
 
@@ -74,6 +77,7 @@ El momento histórico, la confrontación emergente, y la propuesta NEBUAH.
 - [Capítulo 21: Proyectos del Gobierno Provincial de Santa Fe](doc/capitulo21.html)
 - [Capítulo 22: Proyectos Nacionales con Dimensión Internacional](doc/capitulo22.html)
 - [Capítulo 23: Acuerdo Comercial Estados Unidos - Argentina](doc/capitulo23.html)
+- [Capítulo 24: La Misión Genesis - IA, Computación Cuántica y Descubrimiento Científico](doc/capitulo24.html)
 
 ### [Conclusión](doc/conclusion.html)
 Síntesis de aprendizajes clave y llamado a la acción para construir un futuro de integración inteligente.
@@ -113,6 +117,14 @@ Síntesis de aprendizajes clave y llamado a la acción para construir un futuro 
 - CriticalMinerals: cadena de suministro de litio
 - IPRegistry: protección de propiedad intelectual
 - StandardsLink: reconocimiento mutuo de estándares
+
+### Misión Genesis (2025)
+- Análisis de la iniciativa presidencial de EE.UU. para acelerar descubrimiento científico
+- Integración de supercomputación, IA y sistemas cuánticos
+- ScienceChain: verificación descentralizada de resultados científicos
+- GenesisDAO: gobernanza científica colaborativa
+- SciDataMarket: mercado de datos científicos
+- Genesis Gateway Argentina: oportunidades de colaboración bilateral
 
 ---
 
