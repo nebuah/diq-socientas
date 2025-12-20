@@ -24,7 +24,7 @@
 
 ## Contenido
 
-La documentación se organiza en 6 partes con 23 capítulos:
+La documentación se organiza en 6 partes con 24 capítulos:
 
 ### Parte I: Fundamentos Conceptuales
 | Capítulo | Tema |
@@ -72,6 +72,7 @@ La documentación se organiza en 6 partes con 23 capítulos:
 | 21 | Proyectos del Gobierno Provincial de Santa Fe |
 | 22 | Proyectos Nacionales con Dimensión Internacional |
 | 23 | Acuerdo Comercial Estados Unidos - Argentina |
+| 24 | La Misión Genesis: IA, Computación Cuántica y Descubrimiento Científico |
 
 ---
 
@@ -132,6 +133,15 @@ La documentación incluye propuestas concretas para la implementación de DI SOC
 - **IPRegistry US-AR**: Protección de propiedad intelectual bilateral
 - **StandardsLink**: Reconocimiento mutuo de estándares FDA/ANMAT
 - **TradeMonitor**: Dashboard público de cumplimiento del acuerdo
+
+### Misión Genesis (Nov 2025)
+Análisis de la iniciativa presidencial de EE.UU. para acelerar el descubrimiento científico:
+- **Infraestructura**: 17 laboratorios DOE, 100K GPUs (Solstice), sistemas cuánticos
+- **ScienceChain**: Verificación descentralizada de resultados científicos
+- **GenesisDAO**: Gobernanza colaborativa para investigación multi-institucional
+- **SciDataMarket**: Mercado de datos científicos con licenciamiento automatizado
+- **GenesisIP**: Registro de propiedad intelectual con atribución verificable
+- **Genesis Gateway Argentina**: Propuesta de colaboración bilateral científica
 
 ---
 
