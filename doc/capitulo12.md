@@ -4,7 +4,7 @@ Aquí tienes el Capítulo 12.
 
 ## Capítulo 12: Gobernanza Descentralizada
 
-La gobernanza es el **sistema nervioso** de la DI Q SOCIENTAS. Sin mecanismos efectivos de toma de decisiones colectivas, las DAOs y protocolos descentralizados no pueden evolucionar, adaptarse, ni resolver conflictos. Este capítulo explora modelos de gobernanza, procesos, desafíos, y best practices.
+La gobernanza es el **sistema nervioso** de la DI Q SOCIETAS. Sin mecanismos efectivos de toma de decisiones colectivas, las DAOs y protocolos descentralizados no pueden evolucionar, adaptarse, ni resolver conflictos. Este capítulo explora modelos de gobernanza, procesos, desafíos, y best practices.
 
 ### 12.1 Modelos de Gobernanza: Diversidad Mecánica
 
@@ -112,4 +112,4 @@ El modelo más efectivo utiliza ambos:
 
 **Conclusión del Capítulo 12:**
 
-La gobernanza descentralizada es un campo de experimentación vibrante y uno de los mayores desafíos de la DI Q SOCIENTAS. No existe una solución perfecta, sino una serie de compensaciones entre eficiencia, descentralización, seguridad e igualdad. La clave es la **adaptabilidad**: las DAOs deben estar dispuestas a iterar y evolucionar sus modelos de gobernanza a medida que crecen. El papel de NEBUAH es analizar estos modelos, educar a la comunidad sobre sus implicaciones y ayudar a diseñar sistemas que sean a la vez robustos y justos.
+La gobernanza descentralizada es un campo de experimentación vibrante y uno de los mayores desafíos de la DI Q SOCIETAS. No existe una solución perfecta, sino una serie de compensaciones entre eficiencia, descentralización, seguridad e igualdad. La clave es la **adaptabilidad**: las DAOs deben estar dispuestas a iterar y evolucionar sus modelos de gobernanza a medida que crecen. El papel de NEBUAH es analizar estos modelos, educar a la comunidad sobre sus implicaciones y ayudar a diseñar sistemas que sean a la vez robustos y justos.

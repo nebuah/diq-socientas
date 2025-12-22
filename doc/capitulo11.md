@@ -4,7 +4,7 @@ Claro, aquí tienes el Capítulo 11.
 
 ## Capítulo 11: Instrumentos Económicos - Criptomonedas y Tokens
 
-Los tokens y criptomonedas son los **instrumentos económicos fundamentales** de la DI Q SOCIENTAS. Representan valor, confieren derechos, y permiten coordinación económica sin intermediarios centralizados. Este capítulo explora la taxonomía de tokens, la titulización digital, y el concepto innovador del KUX.
+Los tokens y criptomonedas son los **instrumentos económicos fundamentales** de la DI Q SOCIETAS. Representan valor, confieren derechos, y permiten coordinación económica sin intermediarios centralizados. Este capítulo explora la taxonomía de tokens, la titulización digital, y el concepto innovador del KUX.
 
 ### 11.1 Taxonomía de Tokens
 
@@ -81,7 +81,7 @@ La máxima **"TODO BIEN DEBE SER TITULIZADO"** refleja la visión de que cualqui
 
 ### 11.3 El Concepto KUX
 
-El documento introduce **KUX** como un "modelo de título" universal para la DI Q SOCIENTAS. Aunque no se especifica en detalle, podemos conceptualizarlo como un **estándar de token avanzado y universal** diseñado para la titulización de cualquier tipo de activo.
+El documento introduce **KUX** como un "modelo de título" universal para la DI Q SOCIETAS. Aunque no se especifica en detalle, podemos conceptualizarlo como un **estándar de token avanzado y universal** diseñado para la titulización de cualquier tipo de activo.
 
 **Características Propuestas para KUX:**
 
@@ -91,7 +91,7 @@ El documento introduce **KUX** como un "modelo de título" universal para la DI 
 4.  **Distribución de Ingresos y Gobernanza:** El estándar incluiría funciones nativas para la distribución programática de ingresos (dividendos, rentas) y para la votación en la gobernanza del activo subyacente.
 5.  **Interoperabilidad:** Al ser un estándar unificado, los tokens KUX serían fácilmente integrables en todo el ecosistema DeFi (como colateral, en DEXs, etc.).
 
-**Visión:** KUX se convertiría en la infraestructura base para la "Regla de Oro", proporcionando un marco técnico-legal estandarizado y confiable para que cualquier activo pueda ser tokenizado y circular libremente en la DI Q SOCIENTAS.
+**Visión:** KUX se convertiría en la infraestructura base para la "Regla de Oro", proporcionando un marco técnico-legal estandarizado y confiable para que cualquier activo pueda ser tokenizado y circular libremente en la DI Q SOCIETAS.
 
 ---
 

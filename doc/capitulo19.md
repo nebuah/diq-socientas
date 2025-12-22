@@ -9,7 +9,7 @@ Más allá del ambicioso caso municipal, el marco de integración propuesto por 
 
 **El Problema:** El acceso a la inversión en capital de riesgo, bienes raíces o activos de alto valor está restringido a inversores acreditados y grandes capitales, dejando fuera a la mayoría de la población. Los mercados son ilíquidos y opacos.
 
-**Implementación DI Q SOCIENTAS:**
+**Implementación DI Q SOCIETAS:**
 
 -   **Estructura Legal:** Se constituye una **DAO LLC en Wyoming** (o una figura similar en otra jurisdicción favorable) como vehículo de inversión.
 -   **Titulización con KUX:** Se utiliza el estándar KUX para tokenizar los activos.
@@ -22,7 +22,7 @@ Más allá del ambicioso caso municipal, el marco de integración propuesto por 
 
 **El Problema:** Los creadores (músicos, escritores, inventores) a menudo ceden una gran parte de sus derechos y futuras regalías a intermediarios (discográficas, editoriales). El reparto de regalías es un proceso lento, opaco y propenso a errores.
 
-**Implementación DI Q SOCIENTAS:**
+**Implementación DI Q SOCIETAS:**
 
 -   **Estructura Legal:** Un creador o un colectivo de creadores forma una **Asociación Civil** o una **DAO LLC** para gestionar su propiedad intelectual (PI).
 -   **Tokenización de Regalías:** Los derechos sobre las futuras regalías de una obra (una canción, un libro, una patente) se tokenizan como un activo KUX.
@@ -36,7 +36,7 @@ Más allá del ambicioso caso municipal, el marco de integración propuesto por 
 
 **El Problema:** La filantropía tradicional sufre de altos costos administrativos y falta de transparencia. Los donantes a menudo no saben con certeza cómo se utilizó su dinero y cuál fue el impacto real.
 
-**Implementación DI Q SOCIENTAS:**
+**Implementación DI Q SOCIETAS:**
 
 -   **Estructura Legal:** Una ONG se constituye como una **Fundación** o **Asociación Civil**, cumpliendo con los requisitos locales para ser una entidad sin fines de lucro.
 -   **Tesorería Transparente:** La fundación utiliza una tesorería en una DAO, donde todas las donaciones y gastos son visibles en la blockchain.
@@ -51,7 +51,7 @@ Más allá del ambicioso caso municipal, el marco de integración propuesto por 
 
 **El Problema:** En industrias como la de los alimentos orgánicos, el café de comercio justo o los minerales libres de conflicto, es difícil y costoso verificar la autenticidad y el origen de los productos a lo largo de la cadena de suministro.
 
-**Implementación DI Q SOCIENTAS:**
+**Implementación DI Q SOCIETAS:**
 
 -   **Estructura Legal:** Un consorcio de productores, distribuidores y minoristas forma una **Cooperativa** o un consorcio industrial.
 -   **Infraestructura Blockchain:** Crean una blockchain permisionada o utilizan una L2 pública para registrar el viaje de un producto.

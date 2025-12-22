@@ -3,7 +3,7 @@ Aquí tienes el siguiente capítulo.
 ---
 ## Capítulo 7: Infraestructura Técnica: Blockchain y Ethereum
 
-Este capítulo provee depth técnico necesario para comprender cómo funciona la infraestructura que sustenta DI Q SOCIENTAS.
+Este capítulo provee depth técnico necesario para comprender cómo funciona la infraestructura que sustenta DI Q SOCIETAS.
 
 ### 7.1 Fundamentos de Blockchain
 

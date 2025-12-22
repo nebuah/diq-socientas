@@ -8,7 +8,7 @@ Claro. Aquí está el siguiente capítulo, el primero de la Parte II.
 
 ### 5.1 Panorama General
 
-El año 2024-2025 encuentra a la DI Q SOCIENTAS en encrucijada regulatoria crítica. Después de años de relativa indiferencia gubernamental (2009-2017), seguidos por atención creciente (2017-2020), y enforcement agresivo post-colapsos de Terra/Luna y FTX (2022-2023), ahora vemos emerging consensus en algunas jurisdicciones mayores, pero profunda fragmentación global.
+El año 2024-2025 encuentra a la DI Q SOCIETAS en encrucijada regulatoria crítica. Después de años de relativa indiferencia gubernamental (2009-2017), seguidos por atención creciente (2017-2020), y enforcement agresivo post-colapsos de Terra/Luna y FTX (2022-2023), ahora vemos emerging consensus en algunas jurisdicciones mayores, pero profunda fragmentación global.
 
 No existe "posición global" coherente sobre cripto. En cambio, observamos espectro de approaches:
 
@@ -17,7 +17,7 @@ No existe "posición global" coherente sobre cripto. En cambio, observamos espec
 3.  **Jurisdicciones en Desarrollo:** Marcos emergentes, posición indefinida
 4.  **Jurisdicciones Indiferentes:** Vacío regulatorio por falta de capacidad o prioridad
 
-Esta fragmentación crea desafíos profundos para un sistema inherentemente global y sin fronteras como la DI Q SOCIENTAS.
+Esta fragmentación crea desafíos profundos para un sistema inherentemente global y sin fronteras como la DI Q SOCIETAS.
 
 ### 5.2 China e India: El Enfoque Prohibitivo
 
@@ -196,7 +196,7 @@ La Ley GENIUS es una ley específica y quirúrgica, centrada casi exclusivamente
 -   Paxos (USDP) - conformidad
 -   Nuevos entrantes - clarity sobre requirements
 
-**Impacto en DI Q SOCIENTAS:**
+**Impacto en DI Q SOCIETAS:**
 
 -   **Legitimación:** Stablecoins obtienen reconocimiento legal formal en EE.UU.
 -   **Protección al Usuario:** Holders de stablecoins conformes tienen protección similar a dinero electrónico
@@ -471,7 +471,7 @@ El Fondo Monetario Internacional juega rol crucial en propagación de posiciones
 
 **Tensión Fundamental:**
 
-FMI y FATF representan visión top-down, state-centric de governance financiera. DI Q SOCIENTAS representa visión bottom-up, descentralizada. Conflict es ideológico tanto como técnico.
+FMI y FATF representan visión top-down, state-centric de governance financiera. DI Q SOCIETAS representa visión bottom-up, descentralizada. Conflict es ideológico tanto como técnico.
 
 ---
 
@@ -587,7 +587,7 @@ Pero stablecoins carecen de **sovereinty narrative** y **monetary independence**
 
 ### 5.7 América Latina: Oportunidades y Desafíos
 
-América Latina presenta contexto único donde DI Q SOCIENTAS podría tener adoption significativa, pero enfrenta obstáculos estructurales serios.
+América Latina presenta contexto único donde DI Q SOCIETAS podría tener adoption significativa, pero enfrenta obstáculos estructurales serios.
 
 **Factores Favorables para Adoption:**
 

@@ -4,7 +4,7 @@ Claro. Aquí está el Capítulo 10.
 
 ## Capítulo 10: Contratos Inteligentes como Instrumentos Jurídicos
 
-Los contratos inteligentes (smart contracts) son el pilar técnico-legal de la DI Q SOCIENTAS. Son simultáneamente **código ejecutable** y (potencialmente) **acuerdos legalmente vinculantes**. Esta dualidad crea tanto posibilidades extraordinarias como tensiones profundas.
+Los contratos inteligentes (smart contracts) son el pilar técnico-legal de la DI Q SOCIETAS. Son simultáneamente **código ejecutable** y (potencialmente) **acuerdos legalmente vinculantes**. Esta dualidad crea tanto posibilidades extraordinarias como tensiones profundas.
 
 ### 10.1 ¿Qué son los Contratos Inteligentes?
 
@@ -140,4 +140,4 @@ Muchos protocolos incluyen "llaves de administrador" o mecanismos de pausa de em
 
 **Conclusión del Capítulo 10:**
 
-Los contratos inteligentes son la piedra angular de la DI Q SOCIENTAS, actuando como instrumentos técnicos y jurídicos. Su integración en el sistema legal tradicional está en marcha, pero es incompleta. El futuro pertenece a las **aproximaciones híbridas**, como los contratos ricardianos, que combinan la eficiencia del código con la flexibilidad y el matiz de la prosa legal. La misión de NEBUAH es desarrollar y estandarizar estas herramientas para construir un puente robusto entre el código y la ley.
+Los contratos inteligentes son la piedra angular de la DI Q SOCIETAS, actuando como instrumentos técnicos y jurídicos. Su integración en el sistema legal tradicional está en marcha, pero es incompleta. El futuro pertenece a las **aproximaciones híbridas**, como los contratos ricardianos, que combinan la eficiencia del código con la flexibilidad y el matiz de la prosa legal. La misión de NEBUAH es desarrollar y estandarizar estas herramientas para construir un puente robusto entre el código y la ley.

@@ -4,7 +4,7 @@ Aquí tienes el Capítulo 3.
 
 ## Capítulo 3: Principios Filosóficos de la Descentralización Inteligente
 
-La DI Q SOCIENTAS no es meramente conjunto de protocolos técnicos sino expresión de principios filosóficos y políticos potenciados por inteligencia artificial y fortalecidos por seguridad cuántico-resistente. Comprender estos principios es esencial para apreciar tanto su atractivo como las tensiones que genera.
+La DI Q SOCIETAS no es meramente conjunto de protocolos técnicos sino expresión de principios filosóficos y políticos potenciados por inteligencia artificial y fortalecidos por seguridad cuántico-resistente. Comprender estos principios es esencial para apreciar tanto su atractivo como las tensiones que genera.
 
 ### 3.1 Descentralización: Distribución del Poder
 
@@ -14,7 +14,7 @@ La DI Q SOCIENTAS no es meramente conjunto de protocolos técnicos sino expresi�
 
 La teoría política clásica (Montesquieu, Madison) reconoció que concentración de poder conduce a abuso. La separación de poderes (ejecutivo, legislativo, judicial) busca prevenir tiranía mediante checks and balances. La descentralización lleva esta lógica más lejos: no solo separar poderes dentro del Estado sino distribuir funciones estatales mismas entre múltiples actores sin jerarquía clara.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Consenso Distribuido Verificable:** Ningún nodo individual determina qué transacciones son válidas. Consenso emerge de mayoría de validadores, con sistemas de IA monitoreando integridad y detectando anomalías.
 
@@ -42,7 +42,7 @@ La teoría política clásica (Montesquieu, Madison) reconoció que concentraci�
 
 La autonomía kantiana considera a seres racionales como fines en sí mismos, no medios. La autonomía política (soberanía popular, self-government) sostiene que las personas tienen derecho a gobernarse a sí mismas. El anarquismo filosófico cuestiona la legitimidad de autoridad coercitiva impuesta.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Permissionless Innovation (Regulada):** No necesitas solicitar autorización para crear DAO, lanzar token, escribir smart contract. Si tienes habilidades técnicas y fondos para gas, puedes actuar. Sin embargo, marcos como MiCA, GENIUS y CLARITY establecen límites post-facto para protección del usuario.
 
@@ -70,7 +70,7 @@ La autonomía kantiana considera a seres racionales como fines en sí mismos, no
 
 El liberalismo clásico (Mill, Hayek, Nozick) prioriza libertad negativa: ausencia de coerción. La libertad económica —comerciar, contratar, poseer propiedad sin interferencia estatal— se ve como derecho fundamental y prerequisito para prosperidad. El libertarianismo cripto es heredero directo de esta tradición.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Libertad de Circulación de Capital (Bajo Escrutinio):** Puedes enviar valor a cualquier parte del mundo instantáneamente sin solicitar permiso de banco ni gobierno. No hay controles de capital tradicionales, pero regulaciones AML/CFT bajo MiCA y GENIUS requieren compliance para exchanges y proveedores de servicios.
 
@@ -98,7 +98,7 @@ El liberalismo clásico (Mill, Hayek, Nozick) prioriza libertad negativa: ausenc
 
 El cosmopolitismo (Kant, Nussbaum) considera humanidad como comunidad moral única, no fragmentada por nacionalidades. Los derechos humanos universales superan soberanía estatal. El internacionalismo económico (libre comercio, movilidad de capital) argumenta que mercados globales generan prosperidad.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Protocolos Sin Jurisdicción:** Ethereum no "vive" en ningún país. Sus validadores están distribuidos globalmente. No hay soberano territorial que regule el protocolo mismo, aunque MiCA y GENIUS/CLARITY regulan interfaces y proveedores de servicios.
 
@@ -126,7 +126,7 @@ El cosmopolitismo (Kant, Nussbaum) considera humanidad como comunidad moral úni
 
 La democracia deliberativa (Habermas) sostiene que decisiones legítimas emergen de deliberación libre y equitativa. La democracia directa (versus representativa) argumenta que ciudadanos deben decidir políticas directamente. La democracia económica extiende principios democráticos a esfera económica: workers/users deben controlar organizaciones.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Votación Directa Asistida por IA:** Token holders votan directamente en propuestas, sin representatives. "One token one vote" equivale a "one share one vote" corporativo pero con participación más directa. IA proporciona análisis de impacto, resúmenes, y predicciones para informar decisiones.
 
@@ -161,7 +161,7 @@ La democracia deliberativa (Habermas) sostiene que decisiones legítimas emergen
 
 Crítica weberiana de burocratización: la "jaula de hierro" donde racionalización formal crea sistemas opresivos, lentos, deshumanizantes. El tecno-optimismo sostiene que tecnología puede eliminar intermediarios parasitarios y fricciones que no agregan valor.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Registro Instantáneo con Auditoría Automatizada:** Crear DAO lleva minutos: deploy contratos, asignar tokens, comenzar. No hay papeleo, registro estatal, waiting period. IA puede auditar código pre-deployment para detectar vulnerabilidades.
 
@@ -189,7 +189,7 @@ Crítica weberiana de burocratización: la "jaula de hierro" donde racionalizaci
 
 El anarquismo de mercado (Rothbard, Friedman) argumenta que orden puede emerger espontáneamente sin Estado. El common law evolucionario es más adaptable que legislación top-down. Las instituciones efectivas son aquellas desarrolladas por quienes las usan, no impuestas por outsiders.
 
-**Manifestaciones en DI Q SOCIENTAS:**
+**Manifestaciones en DI Q SOCIETAS:**
 
 1.  **Protocolos como Constituciones:** El código del protocolo establece reglas. Community puede modificarlas mediante governance, pero cambio requiere consenso. IA puede simular impactos de cambios propuestos antes de implementación.
 
@@ -239,7 +239,7 @@ La ética ambiental reconoce responsabilidad con generaciones futuras y ecosiste
 
 ### 3.9 Síntesis: Principios en Tensión Productiva Asistida por Inteligencia
 
-Los principios filosóficos de DI Q SOCIENTAS no forman conjunto perfectamente coherente sino constellation de valores en tensión:
+Los principios filosóficos de DI Q SOCIETAS no forman conjunto perfectamente coherente sino constellation de valores en tensión:
 
 -   **Libertad vs. Igualdad:** Libertad sin restricción genera desigualdad; igualdad extrema requiere limitar libertad. IA puede analizar distribuciones de poder pero no resuelve dilemas normativos.
 -   **Eficiencia vs. Justicia:** Automatización eficiente puede ser rígida e injusta en casos particulares. IA puede optimizar pero no siempre humanizar.
@@ -250,4 +250,4 @@ Los principios filosóficos de DI Q SOCIENTAS no forman conjunto perfectamente c
 
 El desafío no es eliminar estas tensiones —eso es imposible y no deseable— sino **gestionarlas inteligentemente** mediante diseño institucional cuidadoso, experimentación iterativa, asistencia de IA para análisis de impacto, y disposición a hybrid solutions que balanceen valores múltiples.
 
-Esta gestión de tensiones es precisamente donde frameworks de integración como el Modelo Wyoming, la Lex Socientas, y los marcos regulatorios MiCA/GENIUS/CLARITY se vuelven cruciales. No se trata de pureza ideológica sino de pragmatic architecture que preserve lo mejor de tres mundos: descentralización (blockchain), inteligencia automatizada (IA), y seguridad futura (preparación cuántica), todo bajo marcos regulatorios que protejan sin sofocar innovación.
+Esta gestión de tensiones es precisamente donde frameworks de integración como el Modelo Wyoming, la Lex Societas, y los marcos regulatorios MiCA/GENIUS/CLARITY se vuelven cruciales. No se trata de pureza ideológica sino de pragmatic architecture que preserve lo mejor de tres mundos: descentralización (blockchain), inteligencia automatizada (IA), y seguridad futura (preparación cuántica), todo bajo marcos regulatorios que protejan sin sofocar innovación.

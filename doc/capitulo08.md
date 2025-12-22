@@ -213,7 +213,7 @@ Unlike Ethereum's account model, Bitcoin usa Unspent Transaction Outputs:
 -   Not smart contract platform
 -   Cannot build DeFi natively (necesita layers como RSK o wrapped BTC en Ethereum)
 
-**Bitcoin en DI Q SOCIENTAS:**
+**Bitcoin en DI Q SOCIETAS:**
 
 **Role:** Monetary base layer, reserve asset.
 
@@ -523,7 +523,7 @@ Circle (USDC), Tether (USDT) can:
 | Censorship Resistance | No (central control)                   | High                          |
 | Stability             | Stable (fiat-backed)                   | Variable (crypto volatility)  |
 
-**DI Q SOCIENTAS Perspective:**
+**DI Q SOCIETAS Perspective:**
 
 **Concerns:**
 

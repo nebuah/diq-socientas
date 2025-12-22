@@ -6,7 +6,7 @@ Claro. Aquí tienes el siguiente capítulo.
 
 ### 2.1 La Societas en el Derecho Romano
 
-La elección del término "SOCIENTAS" no es ornamental sino sustantiva. La *societas* del derecho romano anticipó principios que reaparecen en organizaciones descentralizadas contemporáneas, ahora potenciadas por inteligencia artificial y preparadas para la era cuántica.
+La elección del término "SOCIETAS" no es ornamental sino sustantiva. La *societas* del derecho romano anticipó principios que reaparecen en organizaciones descentralizadas contemporáneas, ahora potenciadas por inteligencia artificial y preparadas para la era cuántica.
 
 **Características de la Societas Romana:**
 
@@ -29,7 +29,7 @@ La elección del término "SOCIENTAS" no es ornamental sino sustantiva. La *soci
 -   La societas no tenía personalidad jurídica separada de sus miembros. DAOs enfrentan este mismo problema en mayoría de jurisdicciones.
 
 **Lección Histórica:**
-Formas organizativas descentralizadas, basadas en contrato y voluntad de los participantes en lugar de autorización estatal, tienen precedentes milenarios. La DI Q SOCIENTAS no inventa cooperación voluntaria sino que la potencia con tres dimensiones tecnológicas convergentes: digitalización (blockchain), inteligencia artificial, y seguridad cuántico-resistente.
+Formas organizativas descentralizadas, basadas en contrato y voluntad de los participantes en lugar de autorización estatal, tienen precedentes milenarios. La DI Q SOCIETAS no inventa cooperación voluntaria sino que la potencia con tres dimensiones tecnológicas convergentes: digitalización (blockchain), inteligencia artificial, y seguridad cuántico-resistente.
 
 ### 2.2 La Lex Mercatoria Medieval
 
@@ -61,9 +61,9 @@ En el siglo XX, con globalización del comercio, la Lex Mercatoria resurgió par
 -   Principios UNIDROIT sobre contratos comerciales internacionales
 -   UNCITRAL (Comisión de Naciones Unidas para el Derecho Mercantil Internacional)
 
-**Analogía con Lex Socientas:**
+**Analogía con Lex Societas:**
 
-La **Lex Socientas**, que desarrollamos en capítulo posterior, se propone como equivalente funcional moderno de la Lex Mercatoria, pero para sistemas organizativos descentralizados inteligentes y cuántico-resistentes. Así como la Lex Mercatoria proveyó marco normativo transnacional para comercio sin depender de Estados individuales, la Lex Socientas busca proveer framework para DAOs asistidas por IA, contratos inteligentes auditados automáticamente, y economías token con criptografía post-cuántica, sin requerir que cada Estado-nación desarrolle legislación específica. Los marcos MiCA (UE) y GENIUS/CLARITY (EE.UU.) representan los primeros pasos hacia esta armonización.
+La **Lex Societas**, que desarrollamos en capítulo posterior, se propone como equivalente funcional moderno de la Lex Mercatoria, pero para sistemas organizativos descentralizados inteligentes y cuántico-resistentes. Así como la Lex Mercatoria proveyó marco normativo transnacional para comercio sin depender de Estados individuales, la Lex Societas busca proveer framework para DAOs asistidas por IA, contratos inteligentes auditados automáticamente, y economías token con criptografía post-cuántica, sin requerir que cada Estado-nación desarrolle legislación específica. Los marcos MiCA (UE) y GENIUS/CLARITY (EE.UU.) representan los primeros pasos hacia esta armonización.
 
 ### 2.3 La Corporación Moderna y sus Limitaciones
 
@@ -103,7 +103,7 @@ Pero introducen nuevos problemas: plutocracy (poder desproporcionado de whales),
 
 **Bitcoin (2008-2009):**
 
-El whitepaper de Satoshi Nakamoto "Bitcoin: A Peer-to-Peer Electronic Cash System" (octubre 2008) y el lanzamiento de la red Bitcoin (enero 2009) marcaron el inicio de lo que hoy conocemos como DI Q SOCIENTAS, aunque en su forma más primitiva: digital y descentralizada, pero sin la inteligencia artificial ni la preparación cuántica que caracterizan la era actual.
+El whitepaper de Satoshi Nakamoto "Bitcoin: A Peer-to-Peer Electronic Cash System" (octubre 2008) y el lanzamiento de la red Bitcoin (enero 2009) marcaron el inicio de lo que hoy conocemos como DI Q SOCIETAS, aunque en su forma más primitiva: digital y descentralizada, pero sin la inteligencia artificial ni la preparación cuántica que caracterizan la era actual.
 
 **Innovaciones Clave de Bitcoin:**
 
@@ -127,9 +127,9 @@ Vitalik Buterin propuso Ethereum en 2013-2014, lanzando la red en julio 2015. Et
 4.  **Composabilidad:** Contratos interactúan entre sí ("money legos")
 5.  **Plataforma de Aplicaciones:** No solo moneda sino infraestructura para cualquier aplicación descentralizada
 
-**Ethereum como Fundación de DI Q SOCIENTAS:**
+**Ethereum como Fundación de DI Q SOCIETAS:**
 
-Ethereum habilitó la dimensión Digital de DI Q SOCIENTAS:
+Ethereum habilitó la dimensión Digital de DI Q SOCIETAS:
 -   **DAOs:** Primeros experimentos 2016 (The DAO, luego frameworks como Aragon, Moloch), ahora evolucionando con asistencia de IA
 -   **DeFi:** MakerDAO (stablecoin), Uniswap (DEX), Aave/Compound (lending), todos sujetos a regulación MiCA/GENIUS
 -   **NFTs:** Propiedad digital verificable (CryptoPunks 2017, explosión 2021)
@@ -143,9 +143,9 @@ La Fundación Ethereum, estructurada como Stiftung (fundación) suiza, ejemplifi
 
 ### 2.5 La Integración Inexorable de la Inteligencia Artificial (2023-presente)
 
-El año 2023 marcó un punto de inflexión con la adopción masiva de modelos de IA generativa (ChatGPT, GPT-4, y sucesores). Esta integración no es futura sino presente y acelerada. La "I" en DI Q SOCIENTAS reconoce que la inteligencia artificial ya es componente operativo, no especulativo:
+El año 2023 marcó un punto de inflexión con la adopción masiva de modelos de IA generativa (ChatGPT, GPT-4, y sucesores). Esta integración no es futura sino presente y acelerada. La "I" en DI Q SOCIETAS reconoce que la inteligencia artificial ya es componente operativo, no especulativo:
 
-**Realidades IA - DI Q SOCIENTAS (ya implementadas):**
+**Realidades IA - DI Q SOCIETAS (ya implementadas):**
 
 1.  **Automatización de Governance:** Agentes de IA YA analizan propuestas, resumen debates complejos, identifican impactos de políticas propuestas. Herramientas como tally.xyz integran análisis automático.
 2.  **Auditoría de Contratos:** IA YA detecta vulnerabilidades en smart contracts con mayor eficacia que auditoría manual. Servicios como Slither, Mythril y auditorías asistidas por GPT son estándar.
@@ -158,7 +158,7 @@ El año 2023 marcó un punto de inflexión con la adopción masiva de modelos de
 
 **Desafíos Actuales (no futuros):**
 
--   Concentración de poder en laboratorios de IA (OpenAI, Anthropic, Google DeepMind) replica centralización que DI Q SOCIENTAS busca evitar
+-   Concentración de poder en laboratorios de IA (OpenAI, Anthropic, Google DeepMind) replica centralización que DI Q SOCIETAS busca evitar
 -   Costos computacionales de IA favorecen actores con recursos masivos
 -   Alignment problem de IA se extiende a DAOs: ¿cómo asegurar que agentes IA actúan según intereses de comunidad?
 -   Regulación de IA (EU AI Act, órdenes ejecutivas EE.UU.) intersecta con regulación cripto creando complejidad normativa
@@ -167,11 +167,11 @@ El año 2023 marcó un punto de inflexión con la adopción masiva de modelos de
 
 Combinar IA con sistemas descentralizados ya está democratizando acceso a capacidades de inteligencia artificial. DAOs YA entrenan modelos colectivamente, datasets YA se tokenizan, inferencia YA se distribuye.
 
-La integración de IA acelera tanto las capacidades de DI Q SOCIENTAS como las presiones regulatorias. Sistemas que combinan IA y cripto son doblemente disruptivos y doblemente escrutados por reguladores.
+La integración de IA acelera tanto las capacidades de DI Q SOCIETAS como las presiones regulatorias. Sistemas que combinan IA y cripto son doblemente disruptivos y doblemente escrutados por reguladores.
 
 ### 2.6 La Amenaza Cuántica: Presente, No Futura
 
-La "Q" en DI Q SOCIENTAS no es ciencia ficción sino preparación estratégica ante amenaza documentada:
+La "Q" en DI Q SOCIETAS no es ciencia ficción sino preparación estratégica ante amenaza documentada:
 
 **Estado Actual de Computación Cuántica:**
 
@@ -185,7 +185,7 @@ La "Q" en DI Q SOCIENTAS no es ciencia ficción sino preparación estratégica a
 -   **SHA-256 (hashing):** Más resistente pero no inmune (algoritmo de Grover reduce seguridad a la mitad)
 -   **Firmas Digitales:** Todas las basadas en curvas elípticas son vulnerables
 
-**Respuesta de DI Q SOCIENTAS:**
+**Respuesta de DI Q SOCIETAS:**
 
 1.  **Investigación Post-Cuántica:** NIST completó en 2024 la estandarización de algoritmos post-cuánticos (CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+)
 2.  **Implementación Anticipada:** Blockchains experimentales (QRL - Quantum Resistant Ledger, ya operativo) usan firma post-cuántica
@@ -200,4 +200,4 @@ La "Q" en DI Q SOCIENTAS no es ciencia ficción sino preparación estratégica a
 
 **Imperativo Presente:**
 
-La preparación cuántica NO es opcional ni diferible. Es imperativo estratégico inmediato. Sistemas que no integren criptografía post-cuántica en próximos 3-5 años enfrentarán obsolescencia de seguridad. La "Q" en DI Q SOCIENTAS marca esta urgencia: el futuro cuántico configura decisiones presentes.
+La preparación cuántica NO es opcional ni diferible. Es imperativo estratégico inmediato. Sistemas que no integren criptografía post-cuántica en próximos 3-5 años enfrentarán obsolescencia de seguridad. La "Q" en DI Q SOCIETAS marca esta urgencia: el futuro cuántico configura decisiones presentes.

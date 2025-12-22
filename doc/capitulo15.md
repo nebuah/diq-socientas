@@ -2,19 +2,19 @@ Aquí tienes el Capítulo 15.
 
 ---
 
-## Capítulo 15: Marco Lex Socientas - Desarrollo Comprehensivo
+## Capítulo 15: Marco Lex Societas - Desarrollo Comprehensivo
 
 ### 15.1 Concepto y Fundamentación
 
-**¿Qué es Lex Socientas?**
+**¿Qué es Lex Societas?**
 
-**Lex Socientas** es el conjunto de **principios, normas y prácticas** que rigen la DI Q SOCIENTAS (Sociedad Digital/Descentralizada). No es una ley estatal, sino un **orden normativo autónomo** que emerge desde dentro del ecosistema blockchain, basado en el código, el consenso de la comunidad y las prácticas emergentes.
+**Lex Societas** es el conjunto de **principios, normas y prácticas** que rigen la DI Q SOCIETAS (Sociedad Digital/Descentralizada). No es una ley estatal, sino un **orden normativo autónomo** que emerge desde dentro del ecosistema blockchain, basado en el código, el consenso de la comunidad y las prácticas emergentes.
 
 **Paralelo con Lex Mercatoria:**
 
 El concepto se inspira directamente en la **Lex Mercatoria** (la "ley del comerciante"), el cuerpo de derecho transnacional que ha gobernado el comercio internacional durante siglos, operando en paralelo a las leyes nacionales.
 
-| **Lex Mercatoria (Comercio Físico)**     | **Lex Socientas (Sociedad Digital)**                |
+| **Lex Mercatoria (Comercio Físico)**     | **Lex Societas (Sociedad Digital)**                |
 | ---------------------------------------- | --------------------------------------------------- |
 | **Sujetos:** Comerciantes transfronterizos | **Sujetos:** DAOs y participantes globales         |
 | **Problema:** Conflicto de leyes nacionales | **Problema:** Sistemas cripto operan fuera de la ley estatal |
@@ -22,13 +22,13 @@ El concepto se inspira directamente en la **Lex Mercatoria** (la "ley del comerc
 | **Tribunales:** Tribunales de mercaderes     | **Tribunales:** Arbitraje descentralizado (Kleros)  |
 | **Reconocimiento:** Convención de Nueva York | **Reconocimiento:** Buscando marcos como el de Wyoming |
 
-Así como la Lex Mercatoria creó un marco predecible y eficiente para el comercio global, la Lex Socientas busca hacer lo mismo para la coordinación y las transacciones en el mundo descentralizado.
+Así como la Lex Mercatoria creó un marco predecible y eficiente para el comercio global, la Lex Societas busca hacer lo mismo para la coordinación y las transacciones en el mundo descentralizado.
 
-**Diferencias Clave:** La Lex Socientas es fundamentalmente **basada en tecnología**. Su cumplimiento es a menudo **auto-ejecutable** a través de contratos inteligentes, es radicalmente **transparente** y su evolución es exponencialmente más **rápida**.
+**Diferencias Clave:** La Lex Societas es fundamentalmente **basada en tecnología**. Su cumplimiento es a menudo **auto-ejecutable** a través de contratos inteligentes, es radicalmente **transparente** y su evolución es exponencialmente más **rápida**.
 
 ### 15.2 Los 15 Principios Rectores
 
-Lex Socientas se fundamenta en un conjunto de principios que reflejan la filosofía del ecosistema descentralizado.
+Lex Societas se fundamenta en un conjunto de principios que reflejan la filosofía del ecosistema descentralizado.
 
 1.  **DESCENTRALIZACIÓN:** El poder y el control deben estar distribuidos, no concentrados, para aumentar la resiliencia y la resistencia a la censura.
 2.  **AUTONOMÍA:** Las organizaciones son auto-gobernadas y auto-ejecutables, operando sin depender de autoridades externas.
@@ -46,9 +46,9 @@ Lex Socientas se fundamenta en un conjunto de principios que reflejan la filosof
 14. **FLEXIBILIDAD Y ADAPTABILIDAD:** Las reglas y estructuras deben ser adaptables a través de la gobernanza, permitiendo la evolución y la corrección de errores (ej. contratos actualizables).
 15. **SOSTENIBILIDAD AMBIENTAL:** El ecosistema debe operar de manera sostenible, minimizando el impacto ecológico (ej. la transición de Ethereum a Proof-of-Stake).
 
-### 15.3 Estructura Normativa de Lex Socientas
+### 15.3 Estructura Normativa de Lex Societas
 
-Lex Socientas no es un cuerpo monolítico de leyes, sino una jerarquía de normas interconectadas.
+Lex Societas no es un cuerpo monolítico de leyes, sino una jerarquía de normas interconectadas.
 
 ```
 ┌─────────────────────────────────────────┐
@@ -67,12 +67,12 @@ Lex Socientas no es un cuerpo monolítico de leyes, sino una jerarquía de norma
 1.  **Nivel Constitucional:** Los 15 principios. Son la base filosófica, casi inmutables.
 2.  **Nivel de Protocolo:** Las reglas de consenso de la blockchain (ej. el límite de 21 millones de Bitcoin, las reglas de Proof-of-Stake de Ethereum). Modificarlas requiere un "hard fork" y un consenso abrumador.
 3.  **Nivel de Gobernanza de DAO:** Las reglas internas de cada DAO, codificadas en su acuerdo operativo (que puede ser un contrato inteligente). Son modificables a través del proceso de gobernanza de la propia DAO.
-4.  **Nivel de Contratos Inteligentes:** Acuerdos específicos entre partes que se auto-ejecutan. Son la manifestación más granular de la Lex Socientas.
-5.  **Capa de Integración:** Aquí es donde la Lex Socientas se conecta con el derecho estatal. Incluye los "legal wrappers" como las DAO LLC de Wyoming o las fundaciones suizas. Este nivel actúa como un "traductor" entre los dos mundos.
+4.  **Nivel de Contratos Inteligentes:** Acuerdos específicos entre partes que se auto-ejecutan. Son la manifestación más granular de la Lex Societas.
+5.  **Capa de Integración:** Aquí es donde la Lex Societas se conecta con el derecho estatal. Incluye los "legal wrappers" como las DAO LLC de Wyoming o las fundaciones suizas. Este nivel actúa como un "traductor" entre los dos mundos.
 
-### 15.4 Fuentes y Gobernanza de Lex Socientas
+### 15.4 Fuentes y Gobernanza de Lex Societas
 
-A diferencia del derecho estatal, la Lex Socientas no tiene un "Congreso" o una "Corte Suprema". Sus normas se crean y modifican a través de un proceso policéntrico y emergente:
+A diferencia del derecho estatal, la Lex Societas no tiene un "Congreso" o una "Corte Suprema". Sus normas se crean y modifican a través de un proceso policéntrico y emergente:
 
 -   **El Código:** La fuente primaria. El código del protocolo y de los contratos inteligentes define lo que es posible y lo que se hace cumplir.
 -   **Consenso de la Comunidad:** Los cambios en el protocolo se logran a través del "consenso aproximado" de desarrolladores, validadores y usuarios.
@@ -83,7 +83,7 @@ A diferencia del derecho estatal, la Lex Socientas no tiene un "Congreso" o una 
 
 ### 15.5 Estrategia de Reconocimiento
 
-Para que Lex Socientas alcance su máximo potencial, necesita ser reconocida por los sistemas legales tradicionales, al igual que la Lex Mercatoria.
+Para que Lex Societas alcance su máximo potencial, necesita ser reconocida por los sistemas legales tradicionales, al igual que la Lex Mercatoria.
 
 -   **Reconocimiento Nacional:** Fomentar que más jurisdicciones adopten marcos legales como el de Wyoming, adaptados a sus propios sistemas jurídicos (derecho anglosajón vs. civil). NEBUAH puede liderar este esfuerzo creando "Leyes Modelo de DAO" para diferentes regiones.
 -   **Reconocimiento Internacional:** A largo plazo, buscar el reconocimiento a través de organismos internacionales.
@@ -94,4 +94,4 @@ Para que Lex Socientas alcance su máximo potencial, necesita ser reconocida por
 
 **Conclusión del Capítulo 15:**
 
-Lex Socientas es el ordenamiento jurídico emergente de la era digital y descentralizada. No busca reemplazar el derecho estatal, sino complementarlo, proporcionando un marco eficiente, transparente y global para la coordinación on-chain. Su desarrollo y reconocimiento son fundamentales para la madurez de la DI Q SOCIENTAS. La tarea de NEBUAH es articular, codificar y abogar por este nuevo cuerpo normativo.
+Lex Societas es el ordenamiento jurídico emergente de la era digital y descentralizada. No busca reemplazar el derecho estatal, sino complementarlo, proporcionando un marco eficiente, transparente y global para la coordinación on-chain. Su desarrollo y reconocimiento son fundamentales para la madurez de la DI Q SOCIETAS. La tarea de NEBUAH es articular, codificar y abogar por este nuevo cuerpo normativo.
