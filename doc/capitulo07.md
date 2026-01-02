@@ -1,6 +1,7 @@
-Aquí tienes el siguiente capítulo.
+[← Volver al índice](../index.md)
 
 ---
+
 ## Capítulo 7: Infraestructura Técnica: Blockchain y Ethereum
 
 Este capítulo provee depth técnico necesario para comprender cómo funciona la infraestructura que sustenta DI SOCIETA.

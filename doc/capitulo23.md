@@ -1,3 +1,7 @@
+[← Volver al índice](../index.md)
+
+---
+
 ## Capítulo 23: Acuerdo Comercial Estados Unidos - Argentina: Implementación con Tecnologías DI SOCIETA
 
 Este capítulo analiza el **Marco para un Acuerdo de Comercio e Inversión Recíproca entre Estados Unidos y Argentina**, anunciado en noviembre de 2025, y propone cómo las tecnologías DI SOCIETA pueden facilitar su implementación, monitoreo y cumplimiento.

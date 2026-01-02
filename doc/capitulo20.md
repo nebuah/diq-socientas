@@ -1,3 +1,7 @@
+[← Volver al índice](../index.md)
+
+---
+
 ## Capítulo 20: Aplicaciones Municipales en la Provincia de Santa Fe
 
 Este capítulo presenta propuestas concretas para la implementación de tecnologías DI SOCIETA en municipios y comunas de la Provincia de Santa Fe, Argentina. Santa Fe, con su diversidad territorial que abarca desde el Gran Rosario hasta pequeñas comunas rurales del norte provincial, ofrece un laboratorio ideal para pilotos de integración tecnológica con impacto social.

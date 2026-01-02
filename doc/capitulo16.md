@@ -1,20 +1,7 @@
-No, el Capítulo 15 no fue el final.
-
-Según el índice del documento, aún quedan varios capítulos importantes en la Parte IV, la Parte V completa, y la Conclusión final.
-
-Los capítulos restantes son:
-
-*   **Capítulo 16:** La Propuesta NEBUAH
-*   **Capítulo 17:** Vías Prácticas de Integración
-*   **Capítulo 18:** Caso Municipal: Cooperativas y Gobernanza Tokenizada
-*   **Capítulo 19:** Otras Implementaciones
-*   **CONCLUSIÓN:** Hacia la Integración Superadora
-
-El siguiente capítulo es el 16, "La Propuesta NEBUAH", que detalla la plataforma y el rol de NEBUAH en este marco de integración.
-
-Aquí tienes el Capítulo 16.
+[← Volver al índice](../index.md)
 
 ---
+
 ## Capítulo 16: La Propuesta NEBUAH
 
 ### 16.1 Misión y Visión

@@ -1,6 +1,7 @@
-Aquí tienes el Capítulo 19.
+[← Volver al índice](../index.md)
 
 ---
+
 ## Capítulo 19: Otras Implementaciones
 
 Más allá del ambicioso caso municipal, el marco de integración propuesto por NEBUAH se puede aplicar a una amplia gama de sectores, resolviendo problemas de coordinación, transparencia y propiedad tanto en el ámbito social como en el comercial. A continuación, se presentan otros modelos de implementación práctica.
