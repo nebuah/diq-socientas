@@ -1,6 +1,7 @@
-Aquí tienes el Capítulo 17.
+[← Volver al índice](../index.md)
 
 ---
+
 ## Capítulo 17: Vías Prácticas de Integración
 
 La integración superadora no es solo un concepto teórico; debe manifestarse en acciones y mecanismos concretos que permitan a los sistemas centralizados y descentralizados interactuar de forma productiva. Este capítulo detalla las vías prácticas que NEBUAH promoverá para construir estos puentes.

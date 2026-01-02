@@ -1,6 +1,7 @@
-Aquí tienes el Capítulo 9, el primero de la Parte III.
+[← Volver al índice](../index.md)
 
 ---
+
 # PARTE III: ELEMENTOS CONSTITUTIVOS DE LA DI SOCIETA
 
 La DI SOCIETA no es simplemente una idea filosófica o un movimiento cultural: es un **ecosistema técnico-legal funcional** compuesto por elementos concretos que operan en la práctica. Esta tercera parte examina los componentes fundamentales que hacen posible la sociedad descentralizada: las organizaciones (DAOs), los instrumentos jurídicos (contratos inteligentes), los instrumentos económicos (tokens y criptomonedas), los mecanismos de gobernanza, y los sistemas de resolución de conflictos.

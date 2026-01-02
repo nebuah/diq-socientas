@@ -1,3 +1,7 @@
+[← Volver al índice](../index.md)
+
+---
+
 ## Capítulo 22: Proyectos Nacionales con Dimensión Internacional
 
 Este capítulo presenta propuestas de implementación de tecnologías DI SOCIETA para el Gobierno Nacional de Argentina, con énfasis particular en proyectos donde las relaciones internacionales son de vital importancia. Argentina, como miembro del G20, socio fundador del MERCOSUR, y actor relevante en foros multilaterales, tiene la oportunidad de liderar la adopción de tecnologías descentralizadas en el contexto de la cooperación internacional.

@@ -1,3 +1,7 @@
+[← Volver al índice](../index.md)
+
+---
+
 # Análisis del Hilo Conductor y Recomendaciones de Adaptación
 
 ## Documento de Trabajo Interno - NEBUAH

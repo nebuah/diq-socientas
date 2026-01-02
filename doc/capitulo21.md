@@ -1,3 +1,7 @@
+[← Volver al índice](../index.md)
+
+---
+
 ## Capítulo 21: Proyectos de Incumbencia del Gobierno Provincial de Santa Fe
 
 Este capítulo presenta propuestas de implementación de tecnologías DI SOCIETA para competencias exclusivas del Gobierno de la Provincia de Santa Fe. A diferencia del capítulo anterior, enfocado en municipios, aquí se abordan sistemas de escala provincial que requieren coordinación centralizada pero pueden beneficiarse de transparencia y eficiencia descentralizada.
