@@ -11,28 +11,11 @@ title: Inicio
 
 ---
 
-## Bienvenido a la Documentación
-
-Este sitio contiene la documentación completa sobre **DI SOCIETA** (Digital/Descentralized Society) y el proyecto **NEBUAH**, una plataforma de coordinación, análisis y mediación entre sistemas centralizados y descentralizados.
-
 ## Sobre este Proyecto
 
 Nos encontramos en un momento de transformación civilizatoria. La irrupción de la tecnología blockchain, los contratos inteligentes, las criptomonedas y las organizaciones autónomas descentralizadas (DAOs) no representan simplemente innovaciones tecnológicas aisladas, sino los componentes de un nuevo paradigma organizativo completo: la **DI SOCIETA**.
 
 Este documento propone una **tercera vía**: la **integración superadora** que reconoce valores legítimos en ambos paradigmas (centralizado y descentralizado) y busca articularlos constructivamente.
-
----
-
-## Novedades
-
-### Misión Genesis - IA y Computación Cuántica para la Ciencia
-**Nuevo Capítulo 24:** Análisis completo de la **Misión Genesis** (noviembre 2025), la iniciativa presidencial de EE.UU. para acelerar el descubrimiento científico mediante IA, supercomputación y sistemas cuánticos. Incluye propuestas de integración con tecnologías DI SOCIETA y oportunidades para Argentina.
-
-### Computación Cuántica y Seguridad
-Los capítulos técnicos (7-13) incluyen análisis exhaustivo sobre el impacto de la **computación cuántica** en sistemas descentralizados: amenazas del algoritmo de Shor, criptografía post-cuántica NIST, firmas híbridas, y hojas de ruta de migración 2025-2032.
-
-### Casos de Estudio Argentina
-Nueva **Parte VI** con propuestas concretas para implementación en Argentina: aplicaciones municipales en Santa Fe, proyectos provinciales, y sistemas nacionales con dimensión internacional (MERCOSUR, comercio exterior, relaciones bilaterales).
 
 ---
 
